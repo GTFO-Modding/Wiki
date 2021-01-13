@@ -1,0 +1,1 @@
+Welcome to the GTFO Modding wiki!
