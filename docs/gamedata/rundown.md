@@ -58,6 +58,10 @@ Dictates if this expidition appears on the rundown.
 Defines the how this expiditions icon appears on the rundown.
 > Enum  0: Normal, 1: AlwayBlock, 2: AlwaysAllow, 3: BlockedAndScrambled
 
+**LevelLayoutData**
+The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
+> {{ site.persistent_id_link }}
+
 ## Descriptive
 This contains all the text elements of a expidition.
 
@@ -118,3 +122,24 @@ The {{site.persistent_id}} of this levels [Complex Resource Set]().
 **LightSettings**
 The {{site.persistent_id}} of this levels [Light Settings]().
 > {{site.persistent_id_link}}
+
+**FogSettings**
+The {{site.persistent_id}} of this levels [Fog Settings]().
+> {{site.persistent_id_link}}
+
+**EnemyPopulation**
+The {{site.persistent_id}} of this levels [Enemy Population]().
+> {{site.persistent_id_link}}
+
+**ExpeditionBalance**
+The {{site.persistent_id}} of this levels [Expedition Balance]().
+> {{site.persistent_id_link}}
+
+**ScoutWaveSettings**
+The {{site.persistent_id}} of this levels [Scout Wave Settings]().
+> {{site.persistent_id_link}}
+
+**ScoutWavePopulation**
+The {{site.persistent_id}} of this levels [Scout Wave Population]().
+> {{site.persistent_id_link}}
+
