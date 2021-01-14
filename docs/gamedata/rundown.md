@@ -5,7 +5,7 @@ has_children: false
 ---
 
 # Rundown
-This is the setup for a Rundown, this allows you to customize the look of the Rundown as well as expidition related data.
+This is the setup for a Rundown, this allows you to customize the look of the Rundown as well as expedition related data.
 
 Some sections of the game data blocks will be skimmed over in this guide as they aren't useful to modders.
 
@@ -47,7 +47,7 @@ Unused.
 > `N/A`
 
 ### TierA-EVisuals
-This effects the color and scale of each tier
+This affects the color and scale of each tier
 
 ```json
 {
@@ -63,14 +63,14 @@ This effects the color and scale of each tier
 ---
 
 # Rundown In Tier
-This contains the data that forms an expidition icon on the rundown.
+This contains the data that forms an expedition icon on the rundown.
 
 ### Enabled
-Dictates if this expidition appears on the rundown.
+Dictates if this expedition appears on the rundown.
 > `Boolean`
 
 ### Accessibility
-Defines the how this expiditions icon appears on the rundown.
+Defines how this expedition's icon appears on the rundown.
 > `Enum  0: Normal, 1: AlwayBlock, 2: AlwaysAllow, 3: BlockedAndScrambled`
 
 ### LevelLayoutData
@@ -80,14 +80,14 @@ The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/
 ---
 
 # Descriptive
-This contains all the text elements of an expidition.
+This contains all the text elements of an expedition.
 
 ### Prefix
-This is a text string that displays before the auto-prefixed number on an expidition.
+This is a text string that displays before the auto-prefixed number on an expedition.
 > {{ site.rich_string_link }}
 
 ### PublicName
-This is the name of the expidition.
+This is the name of the expedition.
 > {{ site.rich_string_link }}
 
 ### ExpeditionDepth
@@ -99,11 +99,11 @@ Dev info.
 > `String`
 
 ### ExpeditionDescription
-The description of the expidition.
+The description of the expedition.
 > {{ site.rich_string_link }}
 
 ### RoleplayedWardenIntel
-The description of the expidition.
+The description of the expedition.
 > {{ site.rich_string_link }}
 
 ### DevInfo
@@ -124,7 +124,7 @@ Effects the layout inside rooms?
 > `Integer`
 
 ### StandardMarkerOffset
-Effects something.
+Does *something*.
 > `Integer`
 
 ### LightJobSeedOffset
@@ -137,31 +137,31 @@ Effects the placement of lights.
 This contains general data related to the expedition that isn't related to the level layout.
 
 ### ComplexResourceData
-The {{site.persistent_id}} of this levels [Complex Resource Set]().
+The {{site.persistent_id}} of this level’s [Complex Resource Set]().
 > {{site.persistent_id_link}}
 
 ### LightSettings
-The {{site.persistent_id}} of this levels [Light Settings]().
+The {{site.persistent_id}} of this level’s [Light Settings]().
 > {{site.persistent_id_link}}
 
 ### FogSettings
-The {{site.persistent_id}} of this levels [Fog Settings]().
+The {{site.persistent_id}} of this level’s [Fog Settings]().
 > {{site.persistent_id_link}}
 
 ### EnemyPopulation
-The {{site.persistent_id}} of this levels [Enemy Population]().
+The {{site.persistent_id}} of this level’s [Enemy Population]().
 > {{site.persistent_id_link}}
 
 ### ExpeditionBalance
-The {{site.persistent_id}} of this levels [Expedition Balance]().
+The {{site.persistent_id}} of this level’s [Expedition Balance]().
 > {{site.persistent_id_link}}
 
 ### ScoutWaveSettings
-The {{site.persistent_id}} of this levels [Scout Wave Settings]().
+The {{site.persistent_id}} of this level’s [Scout Wave Settings]().
 > {{site.persistent_id_link}}
 
 ### ScoutWavePopulation
-The {{site.persistent_id}} of this levels [Scout Wave Population]().
+The {{site.persistent_id}} of this level’s [Scout Wave Population]().
 > {{site.persistent_id_link}}
 
 ---
@@ -185,7 +185,7 @@ The number zones start with, for instance setting this to 100 would have the zon
 ---
 
 # ObjectiveData
-Contains setup for this levels warden objective.
+Contains setup for this level's warden objective.
 See also {{site.guides_wardenobj}}.
 
 ### DataBlockId
