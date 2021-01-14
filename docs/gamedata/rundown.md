@@ -9,28 +9,28 @@ This is the setup for a Rundown, this allows you to customize the look of the Ru
 
 Some sections of the game data blocks will be skimmed over in this guide as they aren't useful to modders.
 
-**ReqToReachTierB-E**
+### ReqToReachTierB-E
 This sets how many badges you need to get to a tier, see [Guidelines - Rundown Setup]() for more info.
 > N/A
 
 # StorytellingData
 
-**Title**
+### Title
 The title of the rundown, this is displayed on the "Connect to Rundown" screen.
 > {{ site.rich_string_link }}
 
-**TextLog**
+### TextLog
 This doesn't seem to display anywhere currenrtly.
 > String
 
 ## Visuals
 This section contains everything related to the visual look of the rundown.
 
-**ColorBackground**
+### ColorBackground
 Unused.
 > N/A
 
-**TierA-EVisuals**
+### TierA-EVisuals
 This effects the color and scale of each tier
 
 ```
@@ -50,114 +50,117 @@ This contains an array of each level in a tier
 # Rundown In Tier
 This contains the data that forms a expidition icon on the rundown.
 
-**Enabled**
+### Enabled
 Dictates if this expidition appears on the rundown.
 > Boolean
 
-**Accessibility**
+### Accessibility
 Defines the how this expiditions icon appears on the rundown.
 > Enum  0: Normal, 1: AlwayBlock, 2: AlwaysAllow, 3: BlockedAndScrambled
 
-**LevelLayoutData**
+### LevelLayoutData
 The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
 > {{ site.persistent_id_link }}
-
-**SecondaryLayerEnabled**
-If this level has a secondary layer
-> Boolean
-
-**SecondaryLayout**
-The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
-> {{ site.persistent_id_link }}
-
-
-**ThirdLayerEnabled**
-If this level has a tertiary layer
-> Boolean
-
-**ThirdLayout**
-The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
-> {{ site.persistent_id_link }}
-
 
 ## Descriptive
 This contains all the text elements of a expidition.
 
-**Prefix**
+### Prefix
 This is a text string that displays before the auto-prefixed number on an expidition.
 > {{ site.rich_string_link }}
 
-**PublicName**
+### PublicName
 This is the name of the expidition.
 > {{ site.rich_string_link }}
 
-**ExpeditionDepth**
+### ExpeditionDepth
 The depth of the expedition.
 > Integer
 
-**EstimatedDuration**
+### EstimatedDuration
 Dev info.
 > String
 
-**ExpeditionDescription**
+### ExpeditionDescription
 The description of the expidition.
 > {{ site.rich_string_link }}
 
-**RoleplayedWardenIntel**
+### RoleplayedWardenIntel
 The description of the expidition.
 > {{ site.rich_string_link }}
 
-**DevInfo**
+### DevInfo
 What it says on the tin.
 > String
 
 ## Seeds
 Contains data related to seeding the level generator.
 
-**BuildSeed**
+### BuildSeed
 The seed used to generate the rooms of the level
 > Integer
 
-**FunctionMarkerOffset**
+### FunctionMarkerOffset
 Effects the layout inside rooms?
 > Integer
 
-**StandardMarkerOffset**
+### StandardMarkerOffset
 Effects something.
 > Integer
 
-**LightJobSeedOffset**
+### LightJobSeedOffset
 Effects the placement of lights.
 > Integer
 
 ## Expedition
 
 
-**ComplexResourceData**
+### ComplexResourceData
 The {{site.persistent_id}} of this levels [Complex Resource Set]().
 > {{site.persistent_id_link}}
 
-**LightSettings**
+### LightSettings
 The {{site.persistent_id}} of this levels [Light Settings]().
 > {{site.persistent_id_link}}
 
-**FogSettings**
+### FogSettings
 The {{site.persistent_id}} of this levels [Fog Settings]().
 > {{site.persistent_id_link}}
 
-**EnemyPopulation**
+### EnemyPopulation
 The {{site.persistent_id}} of this levels [Enemy Population]().
 > {{site.persistent_id_link}}
 
-**ExpeditionBalance**
+### ExpeditionBalance
 The {{site.persistent_id}} of this levels [Expedition Balance]().
 > {{site.persistent_id_link}}
 
-**ScoutWaveSettings**
+### ScoutWaveSettings
 The {{site.persistent_id}} of this levels [Scout Wave Settings]().
 > {{site.persistent_id_link}}
 
-**ScoutWavePopulation**
+### ScoutWavePopulation
 The {{site.persistent_id}} of this levels [Scout Wave Population]().
 > {{site.persistent_id_link}}
 
+## Layers
+
+### SecondaryLayerEnabled
+If this level has a secondary layer
+> Boolean
+
+### SecondaryLayout
+The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
+> {{ site.persistent_id_link }}
+
+### BuildSecondaryFrom
+The layer from which the secondary layer is built.
+> Enum; 0-MainLayer 1-SecondaryLayer 2-ThirdLayer
+
+### ThirdLayerEnabled
+If this level has a tertiary layer
+> Boolean
+
+### ThirdLayout
+The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
+> {{ site.persistent_id_link }}
