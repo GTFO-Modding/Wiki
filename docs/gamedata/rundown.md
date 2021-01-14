@@ -105,7 +105,7 @@ The description of the expidition.
 > {{ site.rich_string_link }}
 
 ### DevInfo
-What it says on the tin.
+What it says on the tin. Not visible in game.
 > String
 
 ---
