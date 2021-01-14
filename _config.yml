@@ -27,9 +27,15 @@ gh_edit_branch: "master" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
-# Custom links
+# Custom Links
+#   Game Data
 rich_string_link: "[GameData - Rich Text](https://gtfo-modding.github.io/wiki/docs/gamedata.html#rich-text)"
 persistent_id_link: "[GameData - Persistent ID](https://gtfo-modding.github.io/wiki/docs/gamedata.html#persistent-id)"
+placement_data_link: "[GameData - Placement Data](https://gtfo-modding.github.io/wiki/docs/gamedata.html#placement-data)"
+
+# Custom Links
+#   Guides
+guides_wardenobj: "[Guides - Setting up a warden objective]()"
 
 # Special Text
 persistent_id: "Persistent ID"
