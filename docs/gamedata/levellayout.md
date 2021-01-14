@@ -97,6 +97,7 @@ This is an example of the basic setup for an expedition, and the zones will be d
 The internal zone number, always starting with 0. It will be offset by ZoneAliasStart in the [Rundown DataBlock](https://github.com/dakkhuza/DataDumper/wiki/Rundown_DataBlock) to create the ingame zone number. 
 For example, if your LocalIndex is 4 and your ZoneAliasStart is 231, the zone number will be 235.
 > Enum; 0-20
+
 ```json
 "LocalIndex": 0,
 ```
@@ -104,6 +105,7 @@ For example, if your LocalIndex is 4 and your ZoneAliasStart is 231, the zone nu
 ## SubSeed 
 The seed that the zone uses to generate rooms.
 > Integer
+
 ```json
 "SubSeed": 0,
 ```
@@ -111,6 +113,7 @@ The seed that the zone uses to generate rooms.
 ## BulkheadDCScanSeed
 The seed for the bulkhead scans to spawn at in the zone, used to prevent scans from overlapping.
 > Integer
+
 ```json
 "BulkheadDCScanSeed": 0,
 ```
@@ -118,6 +121,7 @@ The seed for the bulkhead scans to spawn at in the zone, used to prevent scans f
 ## SubComplex
 The complex type that the zone generates as.
 > Enum; 0-Digsite 1-Refinery 2-Storage 3-Datacenter 4-Lab 5-All 6-Floodways 7-Mining_Reactor 8-Plug_SubComplex_Transition 9-Tech_Reactor
+
 ```json
 "SubComplex": 5,
 ```
@@ -125,6 +129,7 @@ The complex type that the zone generates as.
 ## CustomGeomorph
 A custom prefab for a zone, typically used for reactors.
 > String
+
 ```json
 "CustomGeomorph": "Assets/AssetPrefabs/Complex/Mining/Geomorphs/Refinery/geo_64x64_mining_refinery_X_HA_03.prefab",
 ```
@@ -132,6 +137,7 @@ A custom prefab for a zone, typically used for reactors.
 ## CoverageMinMax
 The size/coverage of the zone, roughly equal to ingame meters.
 > Vector
+
 ```json
 "CoverageMinMax": {
     "x": 40.0,
@@ -142,6 +148,7 @@ The size/coverage of the zone, roughly equal to ingame meters.
 ## BuildFromLocalIndex
 The zone that this zone will build off of; its parent zone.
 > Enum; 0-20
+
 ```json
 "BuildFromLocalIndex": 2,
 ```
@@ -149,6 +156,7 @@ The zone that this zone will build off of; its parent zone.
 ## StartPosition
 The location in the parent zone that this zone will start building from.
 > Enum; 0-From_Random 1-From_Start 2-From_AverageCenter 3-From_Furthest 4-From_BetweenStartAndFurthest 5-From_IndexWeight
+
 ```json
 "StartPosition": 3,
 ```
@@ -156,6 +164,7 @@ The location in the parent zone that this zone will start building from.
 ## StartPosition IndexWeight
 The placement that StartPosition will use if value 5 (From_WeightIndex) is used (see above).
 > Single
+
 ```json
 "StartPosition_IndexWeight": 0.8,
 ```
@@ -163,6 +172,7 @@ The placement that StartPosition will use if value 5 (From_WeightIndex) is used 
 ## StartExpansion
 The direction that this zone will expand to.
 > Enum; 0-Towards_Random 1-Towards_Forward 2-Towards_Backward 3-Towards_Right 4-Towards_Left
+
 ```json
 "StartExpansion": 4,
 ```
@@ -170,6 +180,7 @@ The direction that this zone will expand to.
 ## ZoneExpansion
 The generations of the subzones inside of this zone.
 > Enum; 0-Random 1-Collapsed 2-Expansional 3-Directional_Forward 4-Directional_Backward 5-Directional_Right 6-Directional_Left 7-Directional_Random 
+
 ```json
 "ZoneExpansion": 2,
 ```
@@ -177,6 +188,7 @@ The generations of the subzones inside of this zone.
 ## LightSettings
 The lighting settings that this zone will use from the [Light Settings DataBlock](https://github.com/dakkhuza/DataDumper/wiki/Light_Settings_DataBlock).
 > Persistent ID from LightSettingsDataBlock
+
 ```json
 "LightSettings": 43,
 ```
@@ -190,6 +202,7 @@ The altitudes that the zone will spread across.
 
 ### ChanceToChange
 >Single
+
 ```json
 "AltitudeData": {
     "AllowedZoneAltitude": 7,
@@ -215,6 +228,7 @@ This will show warden intel on the HUD.
 ### Sound
 This is the sound that will play based on the id provided.
 > Boolean, Int
+
 ```json
 "EventsOnEnter": [
     {
