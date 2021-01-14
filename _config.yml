@@ -4,7 +4,7 @@ remote_theme: pmarsceill/just-the-docs
 #Site settings
 title: GTFO Modding Wiki
 description: You're one stop spot for everything modding!
-baseurl: "/wiki"
+#baseurl: "/wiki"
 #url: "https://gtfo-modding.github.io"
 
 logo: "/assets/images/dauna.png"
