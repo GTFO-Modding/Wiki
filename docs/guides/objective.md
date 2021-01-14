@@ -1,6 +1,6 @@
 ---
 title: Setting up a warden objective
-parent: Game Data
+parent: Guides
 has_children: false
 ---
 
