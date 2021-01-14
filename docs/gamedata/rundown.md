@@ -25,7 +25,7 @@ This is the internal name of the rundown, not visible in game.
 See {{site.internal_enabled_link}}
 > Boolean
 
-<hr>
+---
 
 # StorytellingData
 
@@ -37,7 +37,7 @@ The title of the rundown, this is displayed on the "Connect to Rundown" screen.
 This doesn't seem to display anywhere currenrtly.
 > String
 
-<hr>
+---
 
 # Visuals
 This section contains everything related to the visual look of the rundown.
@@ -58,7 +58,7 @@ This effects the color and scale of each tier
 },
 "Scale": 0.2
 ```
-<hr>
+---
 
 # Rundown In Tier
 This contains the data that forms a expidition icon on the rundown.
@@ -125,7 +125,7 @@ Effects something.
 Effects the placement of lights.
 > Integer
 
-<hr>
+---
 
 # Expedition
 This contains general data related to the expedition that isn't related to the level layout.
@@ -158,7 +158,7 @@ The {{site.persistent_id}} of this levels [Scout Wave Settings]().
 The {{site.persistent_id}} of this levels [Scout Wave Population]().
 > {{site.persistent_id_link}}
 
-<hr>
+---
 
 # Main Layer Data
 This contains setup for general level information
@@ -176,7 +176,7 @@ The number zones start with, for instance setting this to 100 would have the zon
 ### BulkheadKeyPlacements
 > List
 
-<hr>
+---
 
 # ObjectiveData
 Contains setup for this levels warden objective.
@@ -202,7 +202,7 @@ Where the exit scan spawns.
 See {{site.placement_data_link}}.
 > List
 
-<hr>
+---
 
 # Layers
 Settings for layered difficulty, secondary and tertiary layouts are the same.
