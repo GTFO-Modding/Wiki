@@ -2,15 +2,14 @@ title: "GTFO Modding Wiki"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "dark"
 search_enabled: true
-baseurl: "/wiki" # the subpath of your site, e.g. /blog
 
 # Enable or disable heading anchors
 heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Join the Discord!":
-    - "//github.com/pmarsceill/just-the-docs"
+  "Join the modding Discord!":
+    - "https://discord.gg/rRMPtv4FAh"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
