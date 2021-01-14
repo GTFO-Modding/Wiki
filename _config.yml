@@ -32,6 +32,7 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 rich_string_link: "[GameData - Rich Text](https://gtfo-modding.github.io/wiki/docs/gamedata.html#rich-text)"
 persistent_id_link: "[GameData - Persistent ID](https://gtfo-modding.github.io/wiki/docs/gamedata.html#persistent-id)"
 placement_data_link: "[GameData - Placement Data](https://gtfo-modding.github.io/wiki/docs/gamedata.html#placement-data)"
+internal_enabled_link: "[GameData - Internal Enabled](https://gtfo-modding.github.io/wiki/docs/gamedata.html#internal-enabled)"
 
 # Custom Links
 #   Guides
