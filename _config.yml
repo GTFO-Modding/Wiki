@@ -1,7 +1,3 @@
-remote_theme: pmarsceill/just-the-docs
-
-
-
 title: GTFO Modding Wiki
 description: Your one stop spot for everything modding!
 
@@ -25,3 +21,6 @@ gh_edit_repository: "https://github.com/GTFO-Modding/GTFO-Modding-Wiki"
 gh_edit_branch: "master" 
 gh_edit_view_mode: "tree"
 color_scheme: dark
+
+
+remote_theme: pmarsceill/just-the-docs
