@@ -143,7 +143,47 @@ The {{site.persistent_id}} of this levels [Scout Wave Settings]().
 The {{site.persistent_id}} of this levels [Scout Wave Population]().
 > {{site.persistent_id_link}}
 
+
+## Main Layer Data
+This contains setup for general level information
+
+### ZoneAliasStart
+The number zones start with, for instance setting this to 100 would have the zones go 100, 101, etc
+> Integer
+
+### ZonesWithBulkheadEntrance
+> List
+
+### BulkheadDoorControllerPlacements
+> List
+
+### BulkheadKeyPlacements
+> List
+
+## ObjectiveData
+Configures what warden objective this level has.
+See also {{site.guides_wardenobj}}
+
+### DataBlockId
+The {{site.persistent_id}} of this levels [Warden Objective]()
+> {{site.persistent_id_link}}
+
+### WinCondition
+Where the exit scan for this level spawns.
+> Enum; 0: Spawn, 1: Custom Geo
+
+### ZonePlacementDatas
+A list of {{site.placement_data_link}}, this defines in what zones the objective can spawn in if valid.
+> {{site.placement_data_link}}
+
+### WinCondition
+Where the exit scan spawns.
+> Enum; 0: Spawn, 1: Custom exit
+
+### ZonePlacementDatas
+
 ## Layers
+Settings for layered difficulty, secondary and tertiary layouts are the same.
 
 ### SecondaryLayerEnabled
 If this level has a secondary layer
@@ -154,13 +194,11 @@ The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/
 > {{ site.persistent_id_link }}
 
 ### BuildSecondaryFrom
+
+#### Layer
 The layer from which the secondary layer is built.
 > Enum; 0-MainLayer 1-SecondaryLayer 2-ThirdLayer
 
-### ThirdLayerEnabled
-If this level has a tertiary layer
-> Boolean
-
-### ThirdLayout
-The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
-> {{ site.persistent_id_link }}
+#### Zone
+The zone index from which to build from.
+> Enum 0-20
