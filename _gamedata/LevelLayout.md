@@ -1,6 +1,6 @@
 ---
 title: Level Layout
-parent: GameData
+parent: Game Data Documentation
 has_children: false
 ---
 
