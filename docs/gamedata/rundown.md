@@ -112,6 +112,9 @@ Effects the placement of lights.
 
 
 **ComplexResourceData**
-The {{site.persistent_id}} of the resource set this level uses, see [Complex Resource Set]() for more info.
+The {{site.persistent_id}} of this levels [Complex Resource Set]().
 > {{site.persistent_id_link}}
 
+**LightSettings**
+The {{site.persistent_id}} of this levels [Light Settings]().
+> {{site.persistent_id_link}}
