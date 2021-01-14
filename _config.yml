@@ -56,3 +56,4 @@ persistent_id: "Persistent ID {: .text-red-100}"
 #      # Exclude the collection from the search
 #      # Supports true or false (default)
 #      search_exclude: false
+theme: jekyll-theme-midnight
