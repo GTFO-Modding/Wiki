@@ -8,6 +8,7 @@ has_children: false
 
 ## Zone Placement
 
-Test Coloring {: .text-red-100 }
+Test Coloring 
+{: .text-red-100 }
 
 ## Setting up the exit
