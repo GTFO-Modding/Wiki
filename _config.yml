@@ -15,9 +15,7 @@ aux_links:
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
 
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "404.md", "Rakefile"
-, "docs/tests/"
-]
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "docs/tests/"]
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
