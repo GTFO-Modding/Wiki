@@ -11,19 +11,19 @@ Some sections of the game data blocks will be skimmed over in this guide as they
 
 ### ReqToReachTierB-E
 This sets how many badges you need to get to a tier, see [Guidelines - Rundown Setup]() for more info.
-> N/A
+> `N/A`
 
 ### TierA-E
 This contains an array of each level in a tier
-> List
+> `List`
 
 ### name
 This is the internal name of the rundown, not visible in game.
-> String
+> `String`
 
 ### internalEnabled
 See {{site.internal_enabled_link}}
-> Boolean
+> `Boolean`
 
 ---
 
@@ -35,7 +35,7 @@ The title of the rundown, this is displayed on the "Connect to Rundown" screen.
 
 ### TextLog
 This doesn't seem to display anywhere currenrtly.
-> String
+> `String`
 
 ---
 
@@ -44,7 +44,7 @@ This section contains everything related to the visual look of the rundown.
 
 ### ColorBackground
 Unused.
-> N/A
+> `N/A`
 
 ### TierA-EVisuals
 This effects the color and scale of each tier
