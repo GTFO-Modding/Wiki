@@ -39,7 +39,7 @@ internal_enabled_link: "[GameData - Internal Enabled](https://gtfo-modding.githu
 guides_wardenobj: "[Guides - Setting up a warden objective]()"
 
 # Special Text
-persistent_id: "Persistent ID"
+persistent_id: "*Persistent ID*"
 
 
 
