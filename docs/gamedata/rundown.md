@@ -49,14 +49,16 @@ Unused.
 ### TierA-EVisuals
 This effects the color and scale of each tier
 
-```
-"Color": {
-    "a": 1.0,
-    "r": 0.4509804,
-    "g": 0.7490196,
-    "b": 0.858823538
-},
-"Scale": 0.2
+```json
+{
+    "Color": {
+        "a": 1.0,
+        "r": 0.4509804,
+        "g": 0.7490196,
+        "b": 0.858823538
+    },
+    "Scale": 0.2
+}
 ```
 ---
 
@@ -65,11 +67,11 @@ This contains the data that forms an expidition icon on the rundown.
 
 ### Enabled
 Dictates if this expidition appears on the rundown.
-> Boolean
+> `Boolean`
 
 ### Accessibility
 Defines the how this expiditions icon appears on the rundown.
-> Enum  0: Normal, 1: AlwayBlock, 2: AlwaysAllow, 3: BlockedAndScrambled
+> `Enum  0: Normal, 1: AlwayBlock, 2: AlwaysAllow, 3: BlockedAndScrambled`
 
 ### LevelLayoutData
 The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
@@ -90,11 +92,11 @@ This is the name of the expidition.
 
 ### ExpeditionDepth
 The depth of the expedition.
-> Integer
+> `Integer`
 
 ### EstimatedDuration
 Dev info.
-> String
+> `String`
 
 ### ExpeditionDescription
 The description of the expidition.
@@ -106,7 +108,7 @@ The description of the expidition.
 
 ### DevInfo
 What it says on the tin. Not visible in game.
-> String
+> `String`
 
 ---
 
@@ -115,19 +117,19 @@ Contains data related to seeding the level generator.
 
 ### BuildSeed
 The seed used to generate the rooms of the level
-> Integer
+> `Integer`
 
 ### FunctionMarkerOffset
 Effects the layout inside rooms?
-> Integer
+> `Integer`
 
 ### StandardMarkerOffset
 Effects something.
-> Integer
+> `Integer`
 
 ### LightJobSeedOffset
 Effects the placement of lights.
-> Integer
+> `Integer`
 
 ---
 
@@ -169,16 +171,16 @@ This contains setup for general level information
 
 ### ZoneAliasStart
 The number zones start with, for instance setting this to 100 would have the zones go 100, 101, etc
-> Integer
+> `Integer`
 
 ### ZonesWithBulkheadEntrance
-> List
+> `List`
 
 ### BulkheadDoorControllerPlacements
-> List
+> `List`
 
 ### BulkheadKeyPlacements
-> List
+> `List`
 
 ---
 
@@ -191,20 +193,12 @@ The {{site.persistent_id}} of this levels [Warden Objective]()
 > {{site.persistent_id_link}}
 
 ### WinCondition
-Where the exit scan for this level spawns.
-> Enum; 0: Spawn, 1: Custom Geo
-
-### ZonePlacementDatas
-A list of {{site.placement_data_link}}, this defines in what zones the objective can spawn in if valid.
-> {{site.placement_data_link}}
-
-### WinCondition
 Where the exit scan spawns.
-> Enum; 0: Spawn, 1: Custom exit
+> `Enum; 0: Spawn, 1: Custom exit`
 
 ### ZonePlacementDatas
 See {{site.placement_data_link}}.
-> List
+> `List`
 
 ---
 
@@ -213,18 +207,18 @@ Settings for layered difficulty, secondary and tertiary layouts are the same.
 
 ### SecondaryLayerEnabled
 If this level has a secondary layer
-> Boolean
+> `Boolean`
 
 ### SecondaryLayout
 The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
 > {{ site.persistent_id_link }}
 
-### BuildSecondaryFrom
+## BuildSecondaryFrom
 
 #### Layer
 The layer from which the secondary layer is built.
-> Enum; 0-MainLayer 1-SecondaryLayer 2-ThirdLayer
+> `Enum; 0-MainLayer 1-SecondaryLayer 2-ThirdLayer`
 
 #### Zone
 The zone index from which to build from.
-> Enum 0-20
+> `Enum; 0-20`
