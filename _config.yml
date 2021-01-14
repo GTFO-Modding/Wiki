@@ -2,8 +2,7 @@ title: "GTFO Modding Wiki"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "dark"
 search_enabled: true
-url: "https://wiki.gtfomodding.dev"
-baseurl: ""
+baseurl: "/wiki"
 
 # Enable or disable heading anchors
 heading_anchors: true
