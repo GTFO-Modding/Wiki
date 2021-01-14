@@ -4,13 +4,13 @@ parent: Game Data
 has_children: false
 ---
 
--# Level
+# Level
 This is the basic setup for an expedition, and the zones will be defined in the "Zones" list. You can see how to create zones below.
 
 **Zones** is a list of all of the zones in the expedition, see below on how to create levels.
 > List
 
-**Name** is the name of the level, but is just internal.
+**Name** is the name of the level. This name is internal and will not be visible anywhere in game.
 > String
 
 **InternalEnabled** is whether or not the level is enabled.
