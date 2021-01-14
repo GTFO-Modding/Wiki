@@ -2,7 +2,7 @@ title: "GTFO Modding Wiki"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "dark"
 search_enabled: true
-baseurl: "/Wiki"
+baseurl: "/wiki"
 
 logo: "/assets/images/dauna.png"
 
