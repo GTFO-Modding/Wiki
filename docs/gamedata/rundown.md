@@ -61,7 +61,7 @@ This effects the color and scale of each tier
 ---
 
 # Rundown In Tier
-This contains the data that forms a expidition icon on the rundown.
+This contains the data that forms an expidition icon on the rundown.
 
 ### Enabled
 Dictates if this expidition appears on the rundown.
@@ -75,8 +75,10 @@ Defines the how this expiditions icon appears on the rundown.
 The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
 > {{ site.persistent_id_link }}
 
-## Descriptive
-This contains all the text elements of a expidition.
+---
+
+# Descriptive
+This contains all the text elements of an expidition.
 
 ### Prefix
 This is a text string that displays before the auto-prefixed number on an expidition.
@@ -106,7 +108,9 @@ The description of the expidition.
 What it says on the tin.
 > String
 
-## Seeds
+---
+
+# Seeds
 Contains data related to seeding the level generator.
 
 ### BuildSeed
