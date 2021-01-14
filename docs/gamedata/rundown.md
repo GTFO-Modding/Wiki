@@ -17,7 +17,7 @@ This sets how many badges you need to get to a tier, see [Guidelines - Rundown S
 
 ### Title
 The title of the rundown, this is displayed on the "Connect to Rundown" screen.
-This uses the same markup as other text fields in GTFO, see [GameData - Text]() for more info.
+This uses the same markup as other text fields in GTFO, see {{ site.rich_string }} for more info.
 > String
 
 ### TextLog
@@ -28,16 +28,7 @@ This doesn't seem to display anywhere currenrtly.
 This section contains everything related to the visual look of the rundown.
 
 ### ColorBackground
-This is the color the rundown background takes, self explanatory.
-
-```
-{
-    "a": 1.0,
-    "r": 0.0,
-    "g": 0.0,
-    "b": 0.0
-}
-```
+Unused.
 
 ### TierA-EVisuals
 This effects the color and scale of each tier
@@ -65,7 +56,28 @@ Dictates if this expidition appears on the rundown.
 
 **Accessibility**
 Defines the how this expiditions icon appears on the rundown.
-> Enum 0: Normal, 1: AlwayBlock, 2: AlwaysAllow, 3: BlockedAndScrambled
+> Enum 
+> Values 0: Normal, 1: AlwayBlock, 2: AlwaysAllow, 3: BlockedAndScrambled
 
 ## Descriptive
+This contains all the text elements of a expidition.
 
+**Prefix**
+This is a text string that displays before the auto-prefixed number on an expidition.
+> String
+
+**PublicName**
+This is the name of the expidition.
+> String
+
+**ExpeditionDepth**
+The depth of the expedition.
+> Integer
+
+**EstimatedDuration**
+Dev info.
+> String
+
+**ExpeditionDescription**
+The description of the expidition.
+> String
