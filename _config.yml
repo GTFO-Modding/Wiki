@@ -27,8 +27,13 @@ gh_edit_branch: "master" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
-# Custom variables
-rich_string: "[GameData - Rich Text](https://gtfo-modding.github.io/wiki/docs/gamedata.html#rich-text)"
+# Custom links
+rich_string_link: "[GameData - Rich Text](https://gtfo-modding.github.io/wiki/docs/gamedata.html#rich-text)"
+persistent_id_link: "[GameData - Persistent ID](https://gtfo-modding.github.io/wiki/docs/gamedata.html#persistent-id)"
+
+# Special Text
+persistent_id: "Persistent ID{: .text-red-100}"
+
 
 
 ## Define Jekyll collections
