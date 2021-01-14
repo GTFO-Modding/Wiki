@@ -62,6 +62,24 @@ Defines the how this expiditions icon appears on the rundown.
 The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
 > {{ site.persistent_id_link }}
 
+**SecondaryLayerEnabled**
+If this level has a secondary layer
+> Boolean
+
+**SecondaryLayout**
+The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
+> {{ site.persistent_id_link }}
+
+
+**ThirdLayerEnabled**
+If this level has a tertiary layer
+> Boolean
+
+**ThirdLayout**
+The {{site.persistent_id}} of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout)
+> {{ site.persistent_id_link }}
+
+
 ## Descriptive
 This contains all the text elements of a expidition.
 
