@@ -13,6 +13,20 @@ Some sections of the game data blocks will be skimmed over in this guide as they
 This sets how many badges you need to get to a tier, see [Guidelines - Rundown Setup]() for more info.
 > N/A
 
+### TierA-E
+This contains an array of each level in a tier
+> List
+
+### name
+This is the internal name of the rundown, not visible in game.
+> String
+
+### internalEnabled
+See {{site.internal_enabled_link}}
+> Boolean
+
+<hr>
+
 # StorytellingData
 
 ### Title
@@ -23,7 +37,9 @@ The title of the rundown, this is displayed on the "Connect to Rundown" screen.
 This doesn't seem to display anywhere currenrtly.
 > String
 
-## Visuals
+<hr>
+
+# Visuals
 This section contains everything related to the visual look of the rundown.
 
 ### ColorBackground
@@ -42,10 +58,7 @@ This effects the color and scale of each tier
 },
 "Scale": 0.2
 ```
-
-## TierA-E
-This contains an array of each level in a tier
-> List
+<hr>
 
 # Rundown In Tier
 This contains the data that forms a expidition icon on the rundown.
@@ -112,8 +125,10 @@ Effects something.
 Effects the placement of lights.
 > Integer
 
-## Expedition
+<hr>
 
+# Expedition
+This contains general data related to the expedition that isn't related to the level layout.
 
 ### ComplexResourceData
 The {{site.persistent_id}} of this levels [Complex Resource Set]().
@@ -143,8 +158,9 @@ The {{site.persistent_id}} of this levels [Scout Wave Settings]().
 The {{site.persistent_id}} of this levels [Scout Wave Population]().
 > {{site.persistent_id_link}}
 
+<hr>
 
-## Main Layer Data
+# Main Layer Data
 This contains setup for general level information
 
 ### ZoneAliasStart
@@ -160,9 +176,11 @@ The number zones start with, for instance setting this to 100 would have the zon
 ### BulkheadKeyPlacements
 > List
 
-## ObjectiveData
-Configures what warden objective this level has.
-See also {{site.guides_wardenobj}}
+<hr>
+
+# ObjectiveData
+Contains setup for this levels warden objective.
+See also {{site.guides_wardenobj}}.
 
 ### DataBlockId
 The {{site.persistent_id}} of this levels [Warden Objective]()
@@ -181,8 +199,12 @@ Where the exit scan spawns.
 > Enum; 0: Spawn, 1: Custom exit
 
 ### ZonePlacementDatas
+See {{site.placement_data_link}}.
+> List
 
-## Layers
+<hr>
+
+# Layers
 Settings for layered difficulty, secondary and tertiary layouts are the same.
 
 ### SecondaryLayerEnabled
