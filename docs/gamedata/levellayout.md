@@ -96,7 +96,7 @@ This is an example of the basic setup for an expedition, and the zones will be d
 ## LocalIndex 
 The internal zone number, always starting with 0. It will be offset by ZoneAliasStart in the [Rundown DataBlock](https://github.com/dakkhuza/DataDumper/wiki/Rundown_DataBlock) to create the ingame zone number. 
 For example, if your LocalIndex is 4 and your ZoneAliasStart is 231, the zone number will be 235.
-> Enum; 0-20
+> Type: Enum; 0-20
 
 ```json
 "LocalIndex": 0,
@@ -104,7 +104,7 @@ For example, if your LocalIndex is 4 and your ZoneAliasStart is 231, the zone nu
 
 ## SubSeed 
 The seed that the zone uses to generate rooms.
-> Integer
+> Type: Integer
 
 ```json
 "SubSeed": 0,
@@ -112,7 +112,7 @@ The seed that the zone uses to generate rooms.
 
 ## BulkheadDCScanSeed
 The seed for the bulkhead scans to spawn at in the zone, used to prevent scans from overlapping.
-> Integer
+> Type: Integer
 
 ```json
 "BulkheadDCScanSeed": 0,
@@ -120,7 +120,7 @@ The seed for the bulkhead scans to spawn at in the zone, used to prevent scans f
 
 ## SubComplex
 The complex type that the zone generates as.
-> Enum; 0-Digsite 1-Refinery 2-Storage 3-Datacenter 4-Lab 5-All 6-Floodways 7-Mining_Reactor 8-Plug_SubComplex_Transition 9-Tech_Reactor
+> Type: Enum; 0-Digsite 1-Refinery 2-Storage 3-Datacenter 4-Lab 5-All 6-Floodways 7-Mining_Reactor 8-Plug_SubComplex_Transition 9-Tech_Reactor
 
 ```json
 "SubComplex": 5,
@@ -128,7 +128,7 @@ The complex type that the zone generates as.
 
 ## CustomGeomorph
 A custom prefab for a zone, typically used for reactors.
-> String
+> Type: String
 
 ```json
 "CustomGeomorph": "Assets/AssetPrefabs/Complex/Mining/Geomorphs/Refinery/geo_64x64_mining_refinery_X_HA_03.prefab",
@@ -136,7 +136,7 @@ A custom prefab for a zone, typically used for reactors.
 
 ## CoverageMinMax
 The size/coverage of the zone, roughly equal to ingame meters.
-> Vector
+> Type: Vector
 
 ```json
 "CoverageMinMax": {
@@ -147,7 +147,7 @@ The size/coverage of the zone, roughly equal to ingame meters.
 
 ## BuildFromLocalIndex
 The zone that this zone will build off of; its parent zone.
-> Enum; 0-20
+> Type: Enum; 0-20
 
 ```json
 "BuildFromLocalIndex": 2,
@@ -155,7 +155,7 @@ The zone that this zone will build off of; its parent zone.
 
 ## StartPosition
 The location in the parent zone that this zone will start building from.
-> Enum; 0-From_Random 1-From_Start 2-From_AverageCenter 3-From_Furthest 4-From_BetweenStartAndFurthest 5-From_IndexWeight
+> Type: Enum; 0-From_Random 1-From_Start 2-From_AverageCenter 3-From_Furthest 4-From_BetweenStartAndFurthest 5-From_IndexWeight
 
 ```json
 "StartPosition": 3,
@@ -163,7 +163,7 @@ The location in the parent zone that this zone will start building from.
 
 ## StartPosition IndexWeight
 The placement that StartPosition will use if value 5 (From_WeightIndex) is used (see above).
-> Single
+> Type: Single
 
 ```json
 "StartPosition_IndexWeight": 0.8,
@@ -171,7 +171,7 @@ The placement that StartPosition will use if value 5 (From_WeightIndex) is used 
 
 ## StartExpansion
 The direction that this zone will expand to.
-> Enum; 0-Towards_Random 1-Towards_Forward 2-Towards_Backward 3-Towards_Right 4-Towards_Left
+> Type: Enum; 0-Towards_Random 1-Towards_Forward 2-Towards_Backward 3-Towards_Right 4-Towards_Left
 
 ```json
 "StartExpansion": 4,
@@ -179,7 +179,7 @@ The direction that this zone will expand to.
 
 ## ZoneExpansion
 The generations of the subzones inside of this zone.
-> Enum; 0-Random 1-Collapsed 2-Expansional 3-Directional_Forward 4-Directional_Backward 5-Directional_Right 6-Directional_Left 7-Directional_Random 
+> Type: Enum; 0-Random 1-Collapsed 2-Expansional 3-Directional_Forward 4-Directional_Backward 5-Directional_Right 6-Directional_Left 7-Directional_Random 
 
 ```json
 "ZoneExpansion": 2,
@@ -187,7 +187,7 @@ The generations of the subzones inside of this zone.
 
 ## LightSettings
 The lighting settings that this zone will use from the [Light Settings DataBlock](https://github.com/dakkhuza/DataDumper/wiki/Light_Settings_DataBlock).
-> Persistent ID from LightSettingsDataBlock
+> Type: Persistent ID from LightSettingsDataBlock
 
 ```json
 "LightSettings": 43,
@@ -198,10 +198,10 @@ The height data of the zone.
 
 ### AllowedZoneAltitude
 The altitudes that the zone will spread across.
->Enum; 0-LowMidHigh 1-OnlyLow 2-OnlyHigh 3-OnlyMid 4-LowMid 5-MidHigh 6-LowHigh 7-Ascending 8-Descending 9-Unchanged
+> Type:Enum; 0-LowMidHigh 1-OnlyLow 2-OnlyHigh 3-OnlyMid 4-LowMid 5-MidHigh 6-LowHigh 7-Ascending 8-Descending 9-Unchanged
 
 ### ChanceToChange
->Single
+> Type:Single
 
 ```json
 "AltitudeData": {
@@ -215,19 +215,19 @@ An event to play when the door to the zone (entering it) is opened.
 
 ### Delay
 How long to wait until the event is triggered. 
-> Single
+> Type: Single
 
 ### Noise
 This will alert the enemies around the door when it is opened.
-> Boolean, Single, Single
+> Type: Boolean, Single, Single
 
 ### Intel
 This will show warden intel on the HUD.
-> Boolean, String
+> Type: Boolean, String
 
 ### Sound
 This is the sound that will play based on the id provided.
-> Boolean, Int
+> Type: Boolean, Int
 
 ```json
 "EventsOnEnter": [
@@ -255,29 +255,29 @@ The progression puzzle required for the door leading into this zone, such as a k
 
 ### PuzzleType
 This is what type of puzzle is required.
-> Enum; 0-None, 1-Keycard_SecurityBox, 2-PowerGenerator_And_PowerCell, 3-Locked_No_Key
+> Type: Enum; 0-None, 1-Keycard_SecurityBox, 2-PowerGenerator_And_PowerCell, 3-Locked_No_Key
 
 ### CustomText
 This the text that will show before the puzzle is completed.
-> String
+> Type: String
 
 ### PlacementCount  
 This how many of the puzzle to spawn (like cells).
-> Int 
+> Type: Int 
 
 ### ZonePlacementData 
 This is where the puzzle item spawns in (a cell or a key).
 
 ### LocalIndex is the zone that the puzzle item spawns in.
-> Enum; 0-20
+> Type: Enum; 0-20
 
 ### Weights is where in the zone to put the puzzle item (closer to front or back, etc).
-> Single, Single, Single
+> Type: Single, Single, Single
 
 ```json
 "ProgressionPuzzleToEnter": {
     "PuzzleType": 2,
-    "CustomText": "<color=red>://ERROR: Door in emergency lockdown, unable to operate.</color>",
+    "CustomText": "<color=red> Type:://ERROR: Door in emergency lockdown, unable to operate.</color> Type:",
     "PlacementCount": 1,
     "ZonePlacementData": [
         {
@@ -294,7 +294,7 @@ This is where the puzzle item spawns in (a cell or a key).
 
 ## ChainedPuzzleToEnter
 The chained puzzle that the door entering this zone will use (the scan type).
-> Persistent ID from ChainedPuzzleDataBlock
+> Type: Persistent ID from ChainedPuzzleDataBlock
 
 ```json
 "ChainedPuzzleToEnter": 37,
@@ -302,7 +302,7 @@ The chained puzzle that the door entering this zone will use (the scan type).
 
 ##  SecurityGateToEnter
 The door/gate type that the door entering this zone will use (security vs apex).
->Enum; 0-Security 1-Apex
+> Type:Enum; 0-Security 1-Apex
 
 ```json
 "SecurityGateToEnter": 1,
@@ -313,19 +313,19 @@ Determines if the door entering this zone is a blood/motion door and the enemy g
 
 ### HasActriveEnemyWave
 This determines if this door will be a blood door or not.
-> Boolean
+> Type: Boolean
 
 ### EnemyGroupInfrontOfDoor
 This determines the enemy group right behind the door, which will get alerted.
-> Persistent ID from EnemyGroupDataBlock
+> Type: Persistent ID from EnemyGroupDataBlock
 
 ### EnemyGroupInArea
 This determines the enemy group in the area behind the door, which may get alerted.
-> Persistent ID from EnemyGroupDataBlock
+> Type: Persistent ID from EnemyGroupDataBlock
 
 ### EnemyGroupsInArea
 This determines the amount of enemy groups in the area behind the door.
-> Integer
+> Type: Integer
 
 ```json
 "ActiveEnemyWave": {
@@ -338,23 +338,23 @@ This determines the amount of enemy groups in the area behind the door.
 
 ## EnemySpawningInZone
 Determines the enemies that spawn throughout the zone, can be multiple groups.
-> List
+> Type: List
 
 ### GroupType
 This determines the type of enemies in the group.
-> Enum; 0-Hibernate 1-PureSneak 2-Detect 3-PureDetect 4-Patrol 5-Awake 6-Hunter
+> Type: Enum; 0-Hibernate 1-PureSneak 2-Detect 3-PureDetect 4-Patrol 5-Awake 6-Hunter
 
 ### Difficulty
 This determines the difficulty of the group.
-> Enum; 0-Easy 1-Medium 2-Hard 3-MiniBoss 4-Boss 5-MegaBoss 6-Biss 7-Buss
+> Type: Enum; 0-Easy 1-Medium 2-Hard 3-MiniBoss 4-Boss 5-MegaBoss 6-Biss 7-Buss
 
 ### Distribution
 This determines the distribution of the group.
-> Enum; 0-None 1-Force_One 2-Rel_Value
+> Type: Enum; 0-None 1-Force_One 2-Rel_Value
 
 ### DistributionValue
 This determines the distribution value if distribution is set to Rel_Value
-> Single
+> Type: Single
 
 ```json
 "EnemySpawningInZone": [
@@ -375,7 +375,7 @@ This determines the distribution value if distribution is set to Rel_Value
 
 ## HSUClustersInZone
 Determines the amount of HSU clusters within the zone.
-> Int
+> Type: Int
 
 ```json
 "HSUClustersInZone": 1,
@@ -383,7 +383,7 @@ Determines the amount of HSU clusters within the zone.
 
 ## CorpseClustersInZone
 Determines the amount of corpse (dead body) clusters within the zone.
-> Int
+> Type: Int
 
 ```json
 "CorpseClustersInZone": 3,
@@ -391,7 +391,7 @@ Determines the amount of corpse (dead body) clusters within the zone.
 
 ## ResourceContainerClustersInZone
 Determines the amount of resource clusters within the zone.
-> Int
+> Type: Int
 
 ```json
 "ResourceContainerClustersInZone": 2,
@@ -399,7 +399,7 @@ Determines the amount of resource clusters within the zone.
 
 ## GeneratorClustersInZone
 Determines the amount of generator clusters within the zone (single generators, not an actual gen cluster).
-> Int
+> Type: Int
 
 ```json
 "GeneratorClustersInZone": 2,
@@ -407,7 +407,7 @@ Determines the amount of generator clusters within the zone (single generators, 
 
 ## CorpsesInZone
 Determines the amount of corpses in the zone.
-> Enum; 0-None 1-Some 2-Many 3-Tons
+> Type: Enum; 0-None 1-Some 2-Many 3-Tons
 
 ```json
 "CorpsesInZone": 1,
@@ -415,7 +415,7 @@ Determines the amount of corpses in the zone.
 
 ## HSUsInZone
 Determines the amount of HSUs in the zone.
-> Enum; 0-None 1-Some 2-Many 3-Tons
+> Type: Enum; 0-None 1-Some 2-Many 3-Tons
 
 ```json
 "HSUsInZone": 2,
@@ -423,7 +423,7 @@ Determines the amount of HSUs in the zone.
 
 ## DeconUnitsInZone
 Determines the amount of Decon Units in the zone.
-> Enum; 0-None 1-Some 2-Many 3-Tons
+> Type: Enum; 0-None 1-Some 2-Many 3-Tons
 
 ```json
 "DeconUnitsInZone": 0,
@@ -431,7 +431,7 @@ Determines the amount of Decon Units in the zone.
 
 ## AllowSmallPickupsAllocation
 Allows consumables to spawn in the zone.
-> Boolean
+> Type: Boolean
 
 ```json
 "AllowSmallPickupsAllocation": true,
@@ -439,7 +439,7 @@ Allows consumables to spawn in the zone.
 
 ## AllowResourceContainerAllocation
 Allows resource boxes to spawn
-> Boolean
+> Type: Boolean
 
 ```json
 "AllowResourceContainerAllocation": true,
@@ -447,7 +447,7 @@ Allows resource boxes to spawn
 
 ## ForceBigPickupsAllocation
 Force the zone to allow big pickups (Fog turbine, cell, etc.) to spawn.
->Boolean
+> Type:Boolean
 
 ```json
 "ForceBigPickupsAllocation": true,
@@ -455,7 +455,7 @@ Force the zone to allow big pickups (Fog turbine, cell, etc.) to spawn.
 
 ## ConsumableDistributionInZone
 The consumables that spawn in the zone.
->Persistent ID from ConsumableDistributionDataBlock
+> Type:Persistent ID from ConsumableDistributionDataBlock
 
 ```json
 "ConsumableDistributionInZone": 1,
@@ -463,7 +463,7 @@ The consumables that spawn in the zone.
 
 ## BigPickupDistributionInZone
 The big pickups (fog turbine, neonate, etc) that spawn in the zone.
-> PersistentId from BigPickupDistributionDataBlock
+> Type: PersistentId from BigPickupDistributionDataBlock
 
 ```json
 "BigPickupDistributionInZone": 0,
@@ -471,48 +471,48 @@ The big pickups (fog turbine, neonate, etc) that spawn in the zone.
 
 ## TerminalPlacements
 The location and data of terminals in the zone.
->List
+> Type:List
 
 ### ZonePlacementWeights
 These provide a specific location (front/back) for the terminal to spawn.
-> Single, Single, Single
+> Type: Single, Single, Single
 
 ### AreaSeedOffset
-> Integer
+> Type: Integer
 
 ### MarkerSeedOffset 
-> Integer
+> Type: Integer
 
 ### LocalLogFiles
 This provides log files in the terminal.
-> List
+> Type: List
 
 ### FileName
 This provides the name of the log when you type LOGS.
-> String
+> Type: String
 
 ### FileContent
 This provides the text of the log when you type READ.
-> String
+> Type: String
 
 ### AttachedAudioFile
 This provides the audio connected to the log.
-> Integer (audio ID)
+> Type: Integer (audio ID)
 
 ### AttachedAudioByteSize
 This provides the size of the audio log.
-> Integer
+> Type: Integer
 
 ### StartingStateData
 
 ### StartingState
-> Enum; 0-Sleeping 1-Awake 2-PlayerInteracting 3-DataMining 4-Hacked 5-CodePuzzle 6-InputTest 7-ReactorError 8-AskToPlayLogAudio 9-DoPlayAudioFile 10-AudioLoopError
+> Type: Enum; 0-Sleeping 1-Awake 2-PlayerInteracting 3-DataMining 4-Hacked 5-CodePuzzle 6-InputTest 7-ReactorError 8-AskToPlayLogAudio 9-DoPlayAudioFile 10-AudioLoopError
 
 ### AudioEventEnter
-> Integer (audio ID)
+> Type: Integer (audio ID)
 
 ### AudioEventExit
-> Integer (audio ID)
+> Type: Integer (audio ID)
 
 
 ```json
@@ -544,7 +544,7 @@ This provides the size of the audio log.
 
 ## ForbidTerminalsInZone
 Prevents terminals from spawning in the zone.
-> Boolean
+> Type: Boolean
 
 ```json
 "ForbidTerminalsInZone": false,
@@ -552,17 +552,17 @@ Prevents terminals from spawning in the zone.
 
 ## PowerGeneratorPlacements
 The placement of power generators in the zone.
-> List
+> Type: List
 
 ### ZonePlacementWeights
 These determine a specific weighting of the generators.
-> Single, Single, Single
+> Type: Single, Single, Single
 
 ### AreaSeedOffset
-> Integer
+> Type: Integer
 
 ### MarkerSeedOffset
-> Integer
+> Type: Integer
 
 ```json
 "PowerGeneratorPlacements": [
@@ -579,17 +579,17 @@ These determine a specific weighting of the generators.
 ```
 ## DisinfectionStationPlacements
 Determines the placement of a disinfection station in the zone.
-> List
+> Type: List
 
 ### ZonePlacementWeights 
 This determines a specific weighting of the disinfection stations.
-> Single, Single, Single
+> Type: Single, Single, Single
 
 ### AreaSeedOffset
-> Integer
+> Type: Integer
 
 ### MarkerSeedOffset
-> Integer
+> Type: Integer
 
 ```json
 "DisinfectionStationPlacements": [
@@ -607,7 +607,7 @@ This determines a specific weighting of the disinfection stations.
 
 ## HealthMulti
 The amount of health spawning in the zone. (0.2 is 1 use, 0.4 is 2 use, etc.)
-> Single
+> Type: Single
 
 ```json
 "HealthMulti": 1.0,
@@ -615,7 +615,7 @@ The amount of health spawning in the zone. (0.2 is 1 use, 0.4 is 2 use, etc.)
 
 ## HealthPlacement
 The placement of the health packs in the zone.
-> Single; Single; Single
+> Type: Single; Single; Single
 
 ```json
 "HealthPlacement": {
@@ -627,7 +627,7 @@ The placement of the health packs in the zone.
 
 ## WeaponAmmoMulti
 The amount of ammo packs spawning in the zone. (0.2 is 1 use, 0.4 is 2 use, etc.)
-> Single
+> Type: Single
 
 ```json
 "WeaponAmmoMulti": 1.0,
@@ -635,7 +635,7 @@ The amount of ammo packs spawning in the zone. (0.2 is 1 use, 0.4 is 2 use, etc.
 
 ## WeaponAmmoPlacement
 The placement of the ammo packs in the zone.
-> Single; Single; Single
+> Type: Single; Single; Single
 
 ```json
 "WeaponAmmoPlacement": {
@@ -647,7 +647,7 @@ The placement of the ammo packs in the zone.
 
 ## ToolAmmoMulti
 The amount of tool packs spawning in the zone. (0.2 is 1 use, 0.4 is 2 use, etc.)
-> Single
+> Type: Single
 
 ```json
 "ToolAmmoMulti": 1.0,
@@ -655,7 +655,7 @@ The amount of tool packs spawning in the zone. (0.2 is 1 use, 0.4 is 2 use, etc.
 
 ## ToolAmmoPlacement
 The placement of the tool packs in the zone.
-> Single; Single; Single
+> Type: Single; Single; Single
 
 ```json
 "ToolAmmoPlacement": {
@@ -667,7 +667,7 @@ The placement of the tool packs in the zone.
 
 ## DisinfectionMulti
 The amount of disinfection packs spawning in the zone. (0.2 is 1 use, 0.4 is 2 use, etc.)
-> Single
+> Type: Single
 
 ```json
 "DisinfectionMulti": 1.0,
@@ -675,7 +675,7 @@ The amount of disinfection packs spawning in the zone. (0.2 is 1 use, 0.4 is 2 u
 
 ## DisinfectionPlacement
 The placement of the disinfect packs in the zone.
-> Single; Single; Single
+> Type: Single; Single; Single
 
 ```json
 "DisinfectionPlacement": {
@@ -686,28 +686,28 @@ The placement of the disinfect packs in the zone.
 ```
 
 ## StaticSpawnDataContainers
->List
+> Type:List
 
 ### Count 
-> Integer
+> Type: Integer
 
 ### DistributionWeightType 
-> Enum
+> Type: Enum
 
 ### DistributionWeight 
-> Single
+> Type: Single
 
 ### DistributionRandomBlend 
-> Single
+> Type: Single
 
 ### DistributionResultPow
-> Single
+> Type: Single
 
 ### StaticSpawnDataId
->  
+> Type:  
 
 ### FixedSeed
-> Int
+> Type: Int
 
 ```
 "StaticSpawnDataContainers": [
@@ -727,8 +727,8 @@ The placement of the disinfect packs in the zone.
 
 ## internalEnabled
 Whether or not this level is enabled or not.
-> Boolean
+> Type: Boolean
 
 ## PersistentID
 The ID that the rundown datablock will refer to for this expedition. Must be unique.
-> Persistent ID
+> Type: Persistent ID
