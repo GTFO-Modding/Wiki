@@ -25,6 +25,7 @@ Whenever you add new a new chunk into the games data blocks, you'll need to assi
 
 
 ## Rich Text
+Unity rich text shit will go here
 
 ## Placement Data
-
+General over view of how placement data works here
