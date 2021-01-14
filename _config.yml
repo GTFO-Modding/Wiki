@@ -1,26 +1,4 @@
-title: GTFO Modding Wiki
-description: Your one stop spot for everything modding!
-
-logo: "/assets/images/dauna.png"
-
-heading_anchors: true
-
-aux_links:
-  "Modding Discord":
-    - "https://discord.gg/arYsUs5K8X"
-
-
-aux_links_new_tab: true
-
-back_to_top: true
-back_to_top_text: "Back to top"
-
-gh_edit_link: true 
-gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/GTFO-Modding/GTFO-Modding-Wiki"
-gh_edit_branch: "master" 
-gh_edit_view_mode: "tree"
-color_scheme: dark
-
-
+title: "Remote theme example"
 remote_theme: pmarsceill/just-the-docs
+color_scheme: "dark"
+search_enabled: false
