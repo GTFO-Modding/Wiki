@@ -32,7 +32,7 @@ rich_string_link: "[GameData - Rich Text](https://gtfo-modding.github.io/wiki/do
 persistent_id_link: "[GameData - Persistent ID](https://gtfo-modding.github.io/wiki/docs/gamedata.html#persistent-id)"
 
 # Special Text
-persistent_id: "Persistent ID {: .text-red-100}"
+persistent_id: "<span class=".text-red-100">Persistent ID</span>"
 
 
 
