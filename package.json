@@ -1,0 +1,44 @@
+{
+  "name": "@gtfo-modding/wiki",
+  "version": "1.0.0",
+  "description": "Check it out here: https://wiki.gtfomodding.dev/",
+  "scripts": {
+    "dev": "npx vuepress dev wiki",
+    "build": "npx vuepress build wiki"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GTFO-Modding/Wiki.git"
+  },
+  "keywords": [
+    "gtfo",
+    "modding",
+    "wiki"
+  ],
+  "author": "Lorttexwolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GTFO-Modding/Wiki/issues"
+  },
+  "homepage": "https://github.com/GTFO-Modding/Wiki",
+  "dependencies": {
+    "@vuepress/plugin-search": "^1.8.0",
+    "dateformat": "^4.5.1",
+    "markdown-it-task-lists": "^2.1.1",
+    "vuepress": "^1.8.0",
+    "vuepress-plugin-clean-urls": "^1.1.2",
+    "vuepress-plugin-container": "^2.1.5",
+    "vuepress-plugin-medium-zoom": "^1.1.9",
+    "vuepress-plugin-named-chunks": "^1.1.4",
+    "vuepress-plugin-nprogress": "^1.1.8",
+    "vuepress-plugin-redirect": "^1.2.5",
+    "vuepress-plugin-seo": "^0.1.4",
+    "vuepress-plugin-sitemap": "^2.3.1",
+    "vuepress-plugin-smooth-scroll": "0.0.10",
+    "vuepress-plugin-zooming": "^1.1.8",
+    "vuepress-theme-yuu": "^3.0.0"
+  },
+  "devDependencies": {
+    "vuepress-types": "^0.9.4"
+  }
+}
