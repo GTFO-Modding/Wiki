@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+
+.github
+.vscode
+.gitignore
+LICENSE
+Dockerfile
+crowdin.yml
+
+wiki/.vuepress/dist
