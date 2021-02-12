@@ -10,7 +10,7 @@ env:
   DEPLOY_URL: 'https://mtfo.wiki'
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -18,12 +18,18 @@ jobs:
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
-
+        
       - name: Install Modules
         run: npm install
 
-      - name: Test Build VuePress
+      - name: Build VuePress
         run: npm run build
+        
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
 
       - name: Prepare
         id: prepare
