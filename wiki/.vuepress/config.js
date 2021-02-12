@@ -1,11 +1,10 @@
-
 /**
  * Creates a Sidebar
  * @param {string} title Name of the Sidebar
  * @param {bool} collapsable  Is the Sidebar collapsable?
  * @param  {...string} children Sidebars children
  */
-function createSideBar(title, collapsable , ...children) {
+function createSideBar(title, collapsable, ...children) {
     return [{
         title,
         collapsable,
@@ -15,8 +14,14 @@ function createSideBar(title, collapsable , ...children) {
 
 module.exports = {
     head: [
-        ["link", { rel: "icon", href: "/images/logo.png" }],
-        ['meta', { name: 'theme-color', content: '#2196f3' }]
+        ["link", {
+            rel: "icon",
+            href: "/images/logo.png"
+        }],
+        ['meta', {
+            name: 'theme-color',
+            content: '#2196f3'
+        }]
     ],
     locales: {
         "/": {
@@ -45,9 +50,9 @@ module.exports = {
             defaultColorTheme: 'blue',
             disableThemeIgnore: true,
             labels: {
-				darkTheme: "Dark theme",
-				ignoreThemes: "Ignore themes"
-			}
+                darkTheme: "Dark theme",
+                ignoreThemes: "Ignore themes"
+            }
         },
 
         repo: "GTFO-Modding/Wiki",
@@ -66,14 +71,21 @@ module.exports = {
                 ariaLabel: "Language",
                 editLinkText: "Help improve this page!",
                 lastUpdated: "Last Updated",
-                nav: [
-                    { text: "Home", link: "/" },
-                    { text: "Docs", link: "/docs/" },
-                    { text: "Discord", link: "https://discord.com/invite/rRMPtv4FAh" }
+                nav: [{
+                        text: "Home",
+                        link: "/"
+                    },
+                    {
+                        text: "Docs",
+                        link: "/docs/"
+                    },
+                    {
+                        text: "Discord",
+                        link: "https://discord.com/invite/rRMPtv4FAh"
+                    }
                 ],
                 sidebar: {
-                    "/docs/": [
-                        {
+                    "/docs/": [{
                             title: "Beginners Guide",
                             collapsable: true,
                             sidebarDepth: 1,
@@ -92,8 +104,7 @@ module.exports = {
                                     title: "Datablocks",
                                     collapsable: true,
                                     initialOpenGroupIndex: -1,
-                                    children: [
-                                        {
+                                    children: [{
                                             title: "Shared",
                                             collapsable: true,
 
@@ -176,65 +187,26 @@ module.exports = {
             after: "</div>",
         }],
         ["named-chunks", {
-            pageChunkName: ({ key }) => `page${key.slice(1)}`,
-            layoutChunkName: ({ componentName }) => `layout-${componentName}`,
-        }],
-        ["vuepress-plugin-redirect", {
-            locales: true,
-            redirectors: [
-                {
-                    base: "/docs",
-                    stroage: true,
-                    alternative: "../docs/beginners-guide/getting-setup"
-                },
-                {
-                    base: "/docs/beginners-guide",
-                    storage: true,
-                    alternative: "getting-setup/"
-                },
-                {
-                    base: "/beginners-guide",
-                    stroage: true,
-                    alternative: "../docs/beginners-guide/getting-setup/"
-                },
-                {
-                    base: "/docs/developers",
-                    storage: true,
-                    alternative: "modding-rundowns/"
-                },
-                {
-                    base: "/developers",
-                    stroage: true,
-                    alternative: "../docs/developers/modding-rundowns/"
-                },
-                {
-                    base: "/docs/developers/datablocks",
-                    storage: true,
-                    alternative: "level-layout"
-                },
-                {
-                    base: "/docs/datablocks",
-                    storage: true,
-                    alternative: "../developers/datablocks/level-layout/"
-                },
-                {
-                    base: "/datablocks",
-                    storage: true,
-                    alternative: "../docs/developers/datablocks/level-layout/"
-                },
-                {
-                    base: "/installing-rundowns",
-                    storage: true,
-                    alternative: "../docs/beginners-guide/installing-rundowns"
-                },
-            ]
+            pageChunkName: ({
+                key
+            }) => `page${key.slice(1)}`,
+            layoutChunkName: ({
+                componentName
+            }) => `layout-${componentName}`,
         }],
         // Still need to configure this! https://github.com/lorisleiva/vuepress-plugin-seo
         ["seo", {
-            
+
         }]
         ["sitemap", {
-            hostname: "https://wiki.gtfomodding.dev/"
+            hostname: "https://mtfo.wiki"
         }]
-    ]
+    ],
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@images': path.resolve(__dirname, '../.assets/images'),
+            },
+        },
+    },
 }
