@@ -11,7 +11,7 @@ RUN npm install
 # Build source
 COPY ./.git ./.git
 COPY ./wiki ./wiki
-RUN  npm run build
+RUN npm run build
 
 # Static Web Server
 FROM nginx:alpine
