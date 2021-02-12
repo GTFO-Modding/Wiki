@@ -1,3 +1,5 @@
+const path = require('path')
+
 /**
  * Creates a Sidebar
  * @param {string} title Name of the Sidebar
@@ -16,7 +18,7 @@ module.exports = {
     head: [
         ["link", {
             rel: "icon",
-            href: "/images/logo.png"
+            href: "./logo.png"
         }],
         ['meta', {
             name: 'theme-color',
@@ -59,7 +61,7 @@ module.exports = {
         docsDir: "docs",
         editLinks: true,
 
-        logo: "/images/logo.png",
+        // logo: "./logo.png",
         smoothScroll: true,
         displayAllHeaders: false,
         activeHeaderLinks: false,

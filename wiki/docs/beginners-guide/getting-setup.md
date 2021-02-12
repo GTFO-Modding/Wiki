@@ -22,7 +22,7 @@ Usually, you would find it here. Though, if you have changed the steam install d
 
 Your [GTFO Folder](#where-is-the-gtfo-folder) should resemble something like this once you have completed these steps.
 
-![GTFO Folder](/images/gtfofolder.png)
+![GTFO Folder](@images/gtfofolder.png)
 
 ## Installing Plugins
 
@@ -33,4 +33,4 @@ Your [GTFO Folder](#where-is-the-gtfo-folder) should resemble something like thi
 
 Luckily adding plugins is easy thanks to [BepInEx](https://github.com/BepInEx/BepInEx), all you have to do place your plugin into the `GTFO\BepInEx\plugins` folder.
 
-![Plugins Folder](/images/plugin.png)
+![Plugins Folder](@images/plugin.png)
