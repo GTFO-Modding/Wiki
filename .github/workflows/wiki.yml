@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Test Build VuePress
-        run: npx run build
+        run: npm run build
 
       - name: Prepare
         id: prepare
