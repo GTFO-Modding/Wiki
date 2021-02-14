@@ -43,7 +43,7 @@ module.exports = {
         extendMarkdown: md => md.use(require('markdown-it-task-lists')),
         lineNumbers: false,
         // toc: { 
-        //     includeLevel: [1, 2, 3]    
+        //     includeLevel: [1, 2, 3]
         // }
     },
     theme: "yuu",
@@ -75,14 +75,26 @@ module.exports = {
                 lastUpdated: "Last Updated",
                 nav: [{
                         text: "Home",
+                        ariaLabel: "Home",
                         link: "/"
                     },
                     {
-                        text: "Docs",
-                        link: "/docs/"
+                        text: "Documentation",
+                        ariaLabel: "Documentation",
+                        items: [
+                            {
+                                text: "Getting Started",
+                                link: "/docs/beginners-guide/getting-setup/"
+                            },
+                            {
+                                text: "Developers",
+                                link: "/docs/developers/modding-rundowns/"
+                            }
+                        ],
                     },
                     {
                         text: "Discord",
+                        ariaLabel: "Discord",
                         link: "https://discord.com/invite/rRMPtv4FAh"
                     }
                 ],
@@ -106,13 +118,16 @@ module.exports = {
                                     title: "Datablocks",
                                     collapsable: true,
                                     initialOpenGroupIndex: -1,
+                                    sidebarDepth: -1,
                                     children: [{
                                             title: "Shared",
                                             collapsable: true,
-
+                                            sidebarDepth: -1,
                                             children: [
                                                 "/docs/developers/datablocks/shared/model-data",
-                                                "/docs/developers/datablocks/shared/linked-slave-model-data"
+                                                "/docs/developers/datablocks/shared/linked-slave-model-data",
+                                                "/docs/developers/datablocks/shared/min-max-value",
+                                                "/docs/developers/datablocks/shared/health-data"
                                             ]
                                         },
                                         "/docs/developers/datablocks/level-layout",

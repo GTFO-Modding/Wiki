@@ -8,6 +8,58 @@ prev: false
 
 Enemy Balancing stuff
 
-::: warning WARNING
+::: warning NOTE
 This doc is not finished!
 :::
+
+## Health
+
+[HealthData](shared/health-data)
+
+## GlueTolerance
+
+`Single`
+
+## GlueFadeOutTime
+
+`Single`
+
+## CanBePushed
+
+`Boolean`
+
+## ForbidTwitchHit
+
+`Boolean`
+
+## AllowDamgeBonusFromBehind
+
+`Boolean`
+
+## UseTentacleTunnelCheck
+
+`Boolean`
+
+## UseVisibilityRaycastDuringTentacleAttack
+
+`Boolean`
+
+## TentacleAttackDamageRadiusIfNoTunnelCheck
+
+`Single`
+
+## TentacleAttackDamage
+
+`Single`
+
+## MeleeAttackDamage
+
+`Single`
+
+## MeleeAttackDamageCheckRadius
+
+`Single`
+
+## TagTime
+
+`Single`

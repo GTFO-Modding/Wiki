@@ -3,7 +3,7 @@
 
 Sample Text
 
-::: warning WARNING
+::: warning NOTE
 This doc is not finished!
 :::
 
