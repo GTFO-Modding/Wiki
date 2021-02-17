@@ -18,7 +18,7 @@ module.exports = {
     head: [
         ["link", {
             rel: "icon",
-            href: "./logo.png"
+            href: "/logo.png"
         }],
         ['meta', {
             name: 'theme-color',
@@ -108,42 +108,42 @@ module.exports = {
                                 "beginners-guide/installing-rundowns",
                             ]
                         },
-                        {
-                            title: "Developers",
-                            collapsable: true,
-                            children: [
-                                "/docs/developers/modding-rundowns",
-                                // "/docs/developers/creating-plugins",
-                                {
-                                    title: "Datablocks",
-                                    collapsable: true,
-                                    initialOpenGroupIndex: -1,
-                                    sidebarDepth: -1,
-                                    children: [{
-                                            title: "Shared",
-                                            collapsable: true,
-                                            sidebarDepth: -1,
-                                            children: [
-                                                "/docs/developers/datablocks/shared/model-data",
-                                                "/docs/developers/datablocks/shared/linked-slave-model-data",
-                                                "/docs/developers/datablocks/shared/min-max-value",
-                                                "/docs/developers/datablocks/shared/health-data"
-                                            ]
-                                        },
-                                        "/docs/developers/datablocks/level-layout",
-                                        "/docs/developers/datablocks/player-offline-gear",
-                                        // "/docs/developers/datablocks/light-settings",
-                                        "/docs/developers/datablocks/enemy",
-                                        "/docs/developers/datablocks/enemy-detection",
-                                        "/docs/developers/datablocks/enemy-balancing",
-                                        "/docs/developers/datablocks/enemy-movement",
-                                        "/docs/developers/datablocks/enemy-behavior",
-                                        "/docs/developers/datablocks/enemy-population",
-                                        "/docs/developers/datablocks/rundown"
-                                    ]
-                                }
-                            ]
-                        }
+                        // {
+                        //     title: "Developers",
+                        //     collapsable: true,
+                        //     children: [
+                        //         "/docs/developers/modding-rundowns",
+                        //         // "/docs/developers/creating-plugins",
+                        //         {
+                        //             title: "Datablocks",
+                        //             collapsable: true,
+                        //             initialOpenGroupIndex: -1,
+                        //             sidebarDepth: -1,
+                        //             children: [{
+                        //                     title: "Shared",
+                        //                     collapsable: true,
+                        //                     sidebarDepth: -1,
+                        //                     children: [
+                        //                         "/docs/developers/datablocks/shared/model-data",
+                        //                         "/docs/developers/datablocks/shared/linked-slave-model-data",
+                        //                         "/docs/developers/datablocks/shared/min-max-value",
+                        //                         "/docs/developers/datablocks/shared/health-data"
+                        //                     ]
+                        //                 },
+                        //                 "/docs/developers/datablocks/level-layout",
+                        //                 "/docs/developers/datablocks/player-offline-gear",
+                        //                 // "/docs/developers/datablocks/light-settings",
+                        //                 "/docs/developers/datablocks/enemy",
+                        //                 "/docs/developers/datablocks/enemy-detection",
+                        //                 "/docs/developers/datablocks/enemy-balancing",
+                        //                 "/docs/developers/datablocks/enemy-movement",
+                        //                 "/docs/developers/datablocks/enemy-behavior",
+                        //                 "/docs/developers/datablocks/enemy-population",
+                        //                 "/docs/developers/datablocks/rundown"
+                        //             ]
+                        //         }
+                        //     ]
+                        // }
                     ],
                     "/": [
                         ""
