@@ -6,7 +6,7 @@ tagline: An Unofficial GTFO Modding Group
 actionText: Beginners Guide →
 actionLink: /docs/beginners-guide/getting-setup#installing-bepinex
 navbar: true
-footer: GTFO Modding Group | OwO
+footer: GTFO Modding Group
 
 tags:
   - gtfo

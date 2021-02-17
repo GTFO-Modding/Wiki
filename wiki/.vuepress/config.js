@@ -113,7 +113,7 @@ module.exports = {
                             collapsable: true,
                             children: [
                                 "/docs/developers/modding-rundowns",
-                                "/docs/developers/creating-plugins",
+                                // "/docs/developers/creating-plugins",
                                 {
                                     title: "Datablocks",
                                     collapsable: true,
@@ -132,7 +132,7 @@ module.exports = {
                                         },
                                         "/docs/developers/datablocks/level-layout",
                                         "/docs/developers/datablocks/player-offline-gear",
-                                        "/docs/developers/datablocks/light-settings",
+                                        // "/docs/developers/datablocks/light-settings",
                                         "/docs/developers/datablocks/enemy",
                                         "/docs/developers/datablocks/enemy-detection",
                                         "/docs/developers/datablocks/enemy-balancing",

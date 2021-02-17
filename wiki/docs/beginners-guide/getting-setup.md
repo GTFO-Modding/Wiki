@@ -6,7 +6,8 @@ next: ./installing-rundowns
 ---
 
 # Getting Setup
-Some stuff about what we are going to do plus maybe compatibility stuff ^^
+
+[//]: # "*Setting up GTFO for modding.*"
 
 ## Installing BepInEx
 
