@@ -7,18 +7,24 @@ next: false
 
 # Installing Rundowns
 
+## Setting up DataDumper
 
-1) Install BepInEx (see above).
+1) Download the latest version of [DataDumper](https://github.com/GTFO-Modding/MTFO/releases/)
 
-1) Download the latest version of MTFO from #mtfo or the [GitHub organization](https://github.com/GTFO-Modding).
+1) Unzip/drag the entire folder into `GTFO\BepInEx\plugins`
 
-1) Unzip/drag the entire folder (containing the two plugins) into GTFO\BepInEx\plugins
+1) Run GTFO, and once you have reached the inject screen, quit the game.
+> Your config folder should look something like this after closing GTFO.
 
-1) Restart the game.
+![BepInEx confg folder](@images/datadumperconfig.png)
 
-1) Download the rundown you want to play from the "Featured Content" category (e.g. #fatal-experiment)
+## Configuring DataDumper
 
-1) Unzip/drag the folder containing the datablocks into GTFO\BepInEx\config\Rundowns
-    - Make sure to check if the rundown you downloaded has extra install steps, these will typically be in a "README.txt" file
+1) Download the rundown you want to play from the **Featured Content** category from our [Discord](https://discord.com/invite/rRMPtv4FAh)
 
-1) Edit the ActiveGameDataPackage config from GTFO\BepInEx\config\DataDumper.cfg to the name of the folder containing the rundown you want to play. (e.g. RundownPackage = Fatal Experiment)
+1) Unzip/drag the folder containing the datablocks into `GTFO\BepInEx\config\Rundowns`
+::: warning NOTE
+Make sure to check if the rundown you downloaded has extra install steps, these will typically be in the `README.txt` file.
+:::
+
+3) Change `RundownPackage` in `GTFO\BepInEx\config\DataDumper.cfg` to the name of the rundown folder you want to play.
