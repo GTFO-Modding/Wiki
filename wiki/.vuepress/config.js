@@ -182,7 +182,9 @@ module.exports = {
                                                 "datablocks/datas/linked-slave-model-data",
                                                 "datablocks/datas/min-max-value",
                                                 "datablocks/datas/health-data",
-                                                "datablocks/datas/expedition-in-tier"
+                                                "datablocks/datas/expedition-in-tier",
+                                                "datablocks/datas/layer-data",
+                                                "datablocks/datas/local-zone-index"
                                             ]
                                         },
                                         "datablocks/rundown",
