@@ -16,7 +16,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -24,7 +24,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -32,7 +32,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -40,7 +40,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -48,7 +48,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -56,7 +56,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -64,7 +64,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -72,7 +72,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -80,7 +80,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -88,7 +88,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -96,7 +96,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -104,7 +104,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
@@ -112,7 +112,7 @@ This doc is not finished!
 
 <div class="codespan">
 
-[MinMaxValue](/docs/developers/datablocks/datas/min-max-value)
+[MinMaxValue](/docs/datablocks/datas/min-max-value)
 
 </div>
 
