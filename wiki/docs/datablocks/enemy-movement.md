@@ -5,11 +5,10 @@ prev: false
 ---
 
 # Enemy Movement
-
-Enemy Movement stuff
+Sample text
 
 ::: warning NOTE
-This doc is not finished!
+This is not finished!
 :::
 
 ## AnimationControllers
@@ -30,25 +29,37 @@ EnemyBirtherCrawlFlip = 1024
 
 `Boolean`
 
+Sample text
+
 ## MoveSlowerWithinTargetDistance
 
 `Single`
+
+Sample text
 
 ## GlobalAnimSpeedMulti
 
 `Single`
 
+Sample text
+
 ## PathMoveAnimSpeedMulti
 
 `Single`
+
+Sample text
 
 ## RotationLerp
 
 `Single`
 
+Sample text
+
 ## RotationLerpWhenNotMoving
 
 `Single`
+
+Sample text
 
 ## DefaultMoveState
 
@@ -79,24 +90,36 @@ StrikerMelee\
 ClimbLadder\
 Jump\
 BirtherGiveBirth\
-TriggerFogSphere\
+TriggerFogSphere
+
+Sample text
 
 ## BlendIntoAttackAnim
 
 `Single`
 
+Sample text
+
 ## BlendIntoScreamAnim
 
 `Single`
+
+Sample text
 
 ## AllowMovmentBlendOutOfPathMove
 
 `Single`
 
+Sample text
+
 ## PathMoveAnimDampTime
 
 `Single`
 
+Sample text
+
 ## AllowClimbDownLadders
 
 `Single`
+
+Sample text

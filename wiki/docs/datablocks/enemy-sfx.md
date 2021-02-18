@@ -5,9 +5,8 @@ prev: false
 ---
 
 # Enemy SFX
+Sample text
 
-Enemy SFX stuff
-
-::: warning WARNING
+::: warning NOTE
 This doc is not finished!
 :::

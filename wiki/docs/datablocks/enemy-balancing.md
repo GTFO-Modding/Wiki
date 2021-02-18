@@ -14,7 +14,11 @@ This doc is not finished!
 
 ## Health
 
-[HealthData](shared/health-data)
+<div class="codespan">
+
+[HealthData](/docs/datablocks/datas/health-data)
+
+</div>
 
 ## GlueTolerance
 

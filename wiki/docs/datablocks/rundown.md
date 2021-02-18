@@ -1,5 +1,5 @@
 ---
-title: Rundown
+lang: en-US
 next: false
 prev: false
 ---
@@ -8,9 +8,8 @@ prev: false
 This is the setup for a Rundown, this allows you to customize the look of the Rundown as well as expedition related data.
 
 ::: warning NOTE
-Some sections of the game data blocks will be skimmed over in this guide as they aren't useful to modders.
+This doc is very much not finished!
 :::
-
 
 ## ReqToReachTierB-E
 This sets how many badges you need to get to a tier, see [Guidelines - Rundown Setup]() for more info.
@@ -28,9 +27,10 @@ This is the internal name of the rundown, not visible in game.
 `String`
 
 ## internalEnabled
-See [internalEnabled](/docs/developers/creating-rundowns.html#internalenabled)
 
 `Boolean`
+
+See [internalEnabled](/docs/developers/creating-rundowns.html#internalenabled)
 
 ## StorytellingData
 
@@ -97,7 +97,14 @@ AlwaysAllow\
 BlockedAndScrambled
 
 ### LevelLayoutData
-The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the [Level Layout](https://gtfo-modding.github.io/wiki/docs/gamedata/levellayout.html#level-layout) block.
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
+The ID of the [Level Layout](./level-layout) block.
 
 </block>
 
@@ -182,24 +189,73 @@ This contains general data related to the expedition that isn't related to the l
 <block>
 
 #### ComplexResourceData
-The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the [Complex Resource Set]() block.
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
+The ID of the [Complex Resource Set]() block.
 
 #### LightSettings
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
 The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the [Light Settings]() block.
 
 #### FogSettings
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
 The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the [Fog Settings]() block.
 
 #### EnemyPopulation
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
 The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the [Enemy Population]() block.
 
 #### ExpeditionBalance
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
 The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the [Expedition Balance]() block.
 
 #### ScoutWaveSettings
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
 The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the [Scout Wave Settings]() block.
 
 #### ScoutWavePopulation
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
 The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the [Scout Wave Population]() block.
 
 </block>
@@ -270,12 +326,20 @@ If this level has a secondary layer
 `Boolean`
 
 ### SecondaryLayout
-The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the [Level Layout](/docs/gamedata/levellayout.html#level-layout)
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
+The ID of the [Level Layout](/docs/gamedata/levellayout.html#level-layout)
 
 <block>
 
 #### Layer
 The layer from which the secondary layer is built.
+
 > MainLayer\
 SecondaryLayer\
 ThirdLayer
@@ -284,7 +348,7 @@ ThirdLayer
 #### Zone
 The zone index from which to build from.
 
-[//]: # "This type is actully a dumb enum "
+<!-- This enum is really dumb -->
 
 `0-20`
 

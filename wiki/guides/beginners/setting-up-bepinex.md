@@ -1,13 +1,17 @@
 ---
-title: Getting Setup
 lang: en-US
 prev: false
 next: ./installing-rundowns
+tags:
+    - rundown
+    - rundowns
+    - installing
+    - bepinex
 ---
 
-# Getting Setup
+# Setting up Modding
 
-[//]: # "*Setting up GTFO for modding.*"
+<!--*Setting up GTFO for modding.*-->
 
 ## Installing BepInEx
 
@@ -28,8 +32,7 @@ Your [GTFO Folder](#where-is-the-gtfo-folder) should resemble something like thi
 ## Installing Plugins
 
 ::: warning NOTICE
-[//]: # "* Only place **.dll** files into the plugins folder to get loaded properly."
-* Plugins might not work as expected depending on which version of [BepInEx](https://github.com/BepInEx/BepInEx) you are using.
+Plugins might not work as expected depending on which version of [BepInEx](https://github.com/BepInEx/BepInEx) you are using.
 :::
 
 Luckily adding plugins is easy thanks to [BepInEx](https://github.com/BepInEx/BepInEx), all you have to do place your plugin into the `GTFO\BepInEx\plugins` folder.

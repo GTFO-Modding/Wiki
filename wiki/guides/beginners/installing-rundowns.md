@@ -1,7 +1,6 @@
 ---
-title: Installing Rundowns
 lang: en-US
-prev: ./getting-setup
+prev: ./setting-up-bepinex
 next: false
 ---
 

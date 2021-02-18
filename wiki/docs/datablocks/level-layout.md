@@ -128,7 +128,12 @@ The direction the zone will expand.
 ```
 
 ## LightSettings
-`uint`
+
+<div class="codespan">
+
+[persistantID](/guides/developers/creating-rundowns.html#persistent-id)
+
+</div>
 
 The lighting settings that the zone will use from the [Light Settings](./light-settings) DataBlock.
 
@@ -230,10 +235,8 @@ dasdfjasfk
 </block>
 
 ```json
-"Intel": {
-    "Enabled": true,
-    "IntelMessage": "Hello World",
-}
+"Enabled": true,
+"IntelMessage": "Hello World",
 ```
 
 ### Sound
@@ -248,10 +251,8 @@ This is the sound that will play based on the ID provided.
 `uint`
 
 ```json
-"Sound": {
-    "Enabled": true,
-    "SoundEvent": 3184121378
-}
+"Enabled": true,
+"SoundEvent": 3184121378
 ```
 
 </block>

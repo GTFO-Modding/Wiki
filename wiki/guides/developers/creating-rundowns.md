@@ -1,33 +1,49 @@
 ---
+lang: en-US
 prev: false
 next: false
 ---
 
-# Modding Rundowns
-_Maybe put something here?_
+# Creating Rundowns
+Interested in making your own Rundown? Well, you came to the right place!
 
-## The Basics?
-Info on how the game works and datablock stuff
+::: warning NOTE
+This guide is not finished!
+:::
+
+## The Fundamentals
+How rundowns use data blocks and some other examples
 
 ## What are Datablocks?
 Sample Text
 
-### Headers
+### Header
 Sample Text
 
 <block>
 
 ### AboveBlockID
 
-Sample Text
+<div class="codespan">
+
+[persistentID](#persistentid)
+
+</div>
+
+<!-- I have no idea how to say this -->
+The ID of the block the header looks above.
 
 ### LabelText
 
-Sample Text
+`String`
+
+The name of the header shown in the unity inspector.
 
 ### FoldoutStatus
 
-Sample Text
+`Boolean`
+
+Wether the section of datablocks are shown in the unity inspector.
 
 </block>
 
@@ -37,27 +53,29 @@ Sample Text
 "FoldoutStatus": true
 ```
 
-### Blocks
+### Block
 Sample Text
 
 <block>
 
-### PersistentID
+### persistentID
+
+`UInt32`
+
+<!-- Maybe have some of this work with the description of blocks themselves --->
 While modding GTFO you'll come across persistentID's pretty often, everything in GTFO uses a persistentID to reference each other. If you've ever worked with a data base of any kind or have moderate experience in programming you'll most likely understand what these are and how they work already. 
 
 In essence, to refer to any other chunk of game data in GTFO you will need it's persistentID. persistentID's are static, unchanging* values.
 
-Unchanging in the sense that from the dev's side, they always stay the same, as modders we can change these values to whatever we want. 
+<!-- Unchanging in the sense that from the dev's side, they always stay the same, as modders we can change these values to whatever we want.  -->
 
 Whenever you add new a new chunk into the games data blocks, you'll need to assign it a persistentID. You cannot use a persistentID that is already used by another chunk in the game data block you're editing but you can use an ID that is already in use by a diffrent data block. 
-*I.E, if data block 1 has a persistent ID in it of 1 and you add a persistent ID of 1 to data block 2, there will be no conflicts.*
-
-persistentID is a uint and as such has a range of 0 to 4,294,967,295, any number between these two ranges is valid.
 
 ### internalEnabled
-Wether the block is enabled
 
 `Boolean`
+
+Wether the block will be loaded or not.
 
 </block>
 
@@ -67,8 +85,8 @@ Wether the block is enabled
 "persistentID": 1
 ```
 
-| Name | About |
+<!-- | Name | About |
 | - | - |
 | [Level Layout](level-layout) | Zones array for the Level Layout datablock |
 | Player Offline Gear | Neat |
-Cool chart?
+Cool chart? -->

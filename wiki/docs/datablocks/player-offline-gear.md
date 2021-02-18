@@ -5,10 +5,10 @@ prev: false
 ---
 
 # Player Offline Gear
-OwO
+Sample text
 
 ::: warning NOTE
-This doc is not finished!
+This is not finished!
 :::
 
 ## GearJSON

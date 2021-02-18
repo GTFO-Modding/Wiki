@@ -18,12 +18,18 @@ module.exports = {
     head: [
         ["link", {
             rel: "icon",
-            href: "/logo.png"
+            href: "@images/logo.png"
         }],
-        ['meta', {
-            name: 'theme-color',
-            content: '#2196f3'
-        }]
+        ['meta', [
+            // { name: "theme-color", content: "#2196f3" },
+            { name: 'theme-color', content: "#121212" },
+            { name: "og:title", content: "MTFO Wiki" },
+            { name: "og:description", content: "The Offical GTFO Modding Community Wiki" },
+            { name: "og:image", content: "@images/logo.png" },
+            { name: "og:image:width", content: "254" },
+            { name: "og:image:height", content: "254" },
+            // { name: "og:type", content: "website" }
+        ]]
     ],
     locales: {
         "/": {
@@ -79,19 +85,38 @@ module.exports = {
                         link: "/"
                     },
                     {
-                        text: "Documentation",
-                        ariaLabel: "Documentation",
+                        text: "Guides",
+                        ariaLabel: "Guides",
                         items: [
                             {
-                                text: "Getting Started",
-                                link: "/docs/beginners-guide/getting-setup/"
+                                text: "Setting up BepInEx",
+                                link: "/guides/beginners/setting-up-bepinex.html#installing-bepinex"
                             },
                             {
-                                text: "Developers",
-                                link: "/docs/developers/modding-rundowns/"
+                                text: "Installing Rundowns",
+                                link: "/guides/beginners/installing-rundowns"
+                            },
+                            {
+                                text: "Creating Rundowns",
+                                link: "/guides/developers/creating-rundowns"
                             }
-                        ],
+                        ]
                     },
+                    {
+                        text: "Docs",
+                        ariaLabel: "Docs",
+                        items: [
+                            {
+                                text: "Datablocks",
+                                link: "/docs/datablocks/rundown"
+                            }
+                        ]
+                    },
+                    // {
+                    //     text: "Community",
+                    //     ariaLabel: "Community",
+                    //     link: "/community/guidelines"
+                    // },
                     {
                         text: "Discord",
                         ariaLabel: "Discord",
@@ -99,51 +124,80 @@ module.exports = {
                     }
                 ],
                 sidebar: {
-                    "/docs/": [{
-                            title: "Beginners Guide",
-                            collapsable: true,
-                            sidebarDepth: 1,
+                    "/community/": [
+                        {
+                            title: "Community",
+                            collapsable: false,
+                            // sidebarDepth: 1,
                             children: [
-                                "beginners-guide/getting-setup",
-                                "beginners-guide/installing-rundowns",
+                                "guidelines",
+                                "getting-featured"
+                            ]
+                        }
+                    ],
+                    "/guides/": [
+                        {
+                            title: "Guides",
+                            collapsable: false,
+                            // sidebarDepth: 1,
+                            children: [
+                                {
+                                    title: "Getting Started",
+                                    collapsable: true,
+                                    children: [
+                                        "beginners/setting-up-bepinex",
+                                        "beginners/installing-rundowns",
+                                    ]
+                                },
+                                {
+                                    title: "Developers",
+                                    collapsable: true,
+                                    children: [
+                                        "developers/creating-rundowns",
+                                        "developers/creating-plugins"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "/docs/": [
+                        {
+                            title: "Documentation",
+                            collapsable: false,
+                            // sidebarDepth: 1,
+                            children: [
+                                {
+                                    title: "Datablocks",
+                                    collapsable: true,
+                                    initialOpenGroupIndex: -1,
+                                    sidebarDepth: -1,
+                                    children: [
+                                        {
+                                            title: "Datas",
+                                            collapsable: true,
+                                            sidebarDepth: -1,
+                                            initialOpenGroupIndex: -1,
+                                            children: [
+                                                "datablocks/datas/model-data",
+                                                "datablocks/datas/linked-slave-model-data",
+                                                "datablocks/datas/min-max-value",
+                                                "datablocks/datas/health-data",
+                                                "datablocks/datas/expedition-in-tier"
+                                            ]
+                                        },
+                                        "datablocks/rundown",
+                                        "datablocks/level-layout",
+                                        "datablocks/player-offline-gear",
+                                        "datablocks/enemy",
+                                        "datablocks/enemy-detection",
+                                        "datablocks/enemy-balancing",
+                                        "datablocks/enemy-movement",
+                                        "datablocks/enemy-behavior",
+                                        "datablocks/enemy-population",
+                                    ]
+                                }
                             ]
                         },
-                        // {
-                        //     title: "Developers",
-                        //     collapsable: true,
-                        //     children: [
-                        //         "/docs/developers/modding-rundowns",
-                        //         // "/docs/developers/creating-plugins",
-                        //         {
-                        //             title: "Datablocks",
-                        //             collapsable: true,
-                        //             initialOpenGroupIndex: -1,
-                        //             sidebarDepth: -1,
-                        //             children: [{
-                        //                     title: "Shared",
-                        //                     collapsable: true,
-                        //                     sidebarDepth: -1,
-                        //                     children: [
-                        //                         "/docs/developers/datablocks/shared/model-data",
-                        //                         "/docs/developers/datablocks/shared/linked-slave-model-data",
-                        //                         "/docs/developers/datablocks/shared/min-max-value",
-                        //                         "/docs/developers/datablocks/shared/health-data"
-                        //                     ]
-                        //                 },
-                        //                 "/docs/developers/datablocks/level-layout",
-                        //                 "/docs/developers/datablocks/player-offline-gear",
-                        //                 // "/docs/developers/datablocks/light-settings",
-                        //                 "/docs/developers/datablocks/enemy",
-                        //                 "/docs/developers/datablocks/enemy-detection",
-                        //                 "/docs/developers/datablocks/enemy-balancing",
-                        //                 "/docs/developers/datablocks/enemy-movement",
-                        //                 "/docs/developers/datablocks/enemy-behavior",
-                        //                 "/docs/developers/datablocks/enemy-population",
-                        //                 "/docs/developers/datablocks/rundown"
-                        //             ]
-                        //         }
-                        //     ]
-                        // }
                     ],
                     "/": [
                         ""

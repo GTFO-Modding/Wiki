@@ -7,8 +7,8 @@ prev: false
 # Enemy Population
 Enemy Population stuff
 
-::: warning WARNING
-This doc is not finished!
+::: warning NOTE
+This is not finished!
 :::
 
 ## Role 
@@ -47,25 +47,34 @@ Buss
 ```
 
 ## Enemy 
-The [ID](/docs/developers/creating-rundowns.html#persistent-id) of the desired enemy. This ID is pulled from Enemy Data.
+
+<div class="codespan">
+
+[persistantID](/docs/developers/creating-rundowns.html#persistent-id)
+
+</div>
+
+The ID of the desired enemy. This ID is pulled from Enemy Data.
 
 ```json
 "Enemy": 12,
 ```
 
 ## Cost
-The cost of the current enemy. This value will be subtracted from MaxScore in Enemy Group Data.
 
  `Single`
+
+The cost of the current enemy. This value will be subtracted from MaxScore in Enemy Group Data.
 
 ```json
 "Cost": 5.0,
 ```
 
 ## Weight 
-The chance of this enemy being selected in a group, relative to others.
 
 `Single`
+
+The chance of this enemy being selected in a group, relative to others.
 
 ```json
 "Weight": 0.75

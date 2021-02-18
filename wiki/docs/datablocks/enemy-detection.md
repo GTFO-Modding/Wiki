@@ -8,30 +8,42 @@ prev: false
 
 Enemy Detection stuff
 
-::: warning WARNING
-This doc is not finished!
+::: warning NOTE
+This is not finished!
 :::
 
 ## weaponDetectionDistanceMin
 
 `Single`
 
+Sample text
+
 ## weaponDetectionDistanceMax
 
 `Single`
+
+Sample text
 
 ## detectionNodeDistanceMax
 
 `Single`
 
+Sample text
+
 ## movementDetectionDistance
 
 `Single`
+
+Sample text
 
 ## detectionBuildupSpeed
 
 `Single`
 
+Sample text
+
 ## detectionCooldownSpeed
 
 `Single`
+
+Sample text
