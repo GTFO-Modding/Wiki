@@ -85,6 +85,11 @@ module.exports = {
                         link: "/"
                     },
                     {
+                        text: "FAQ",
+                        ariaLabel: "FAQ",
+                        link: "/FAQ"
+                    },
+                    {
                         text: "Guides",
                         ariaLabel: "Guides",
                         items: [
