@@ -84,11 +84,11 @@ module.exports = {
                         ariaLabel: "Home",
                         link: "/"
                     },
-                    {
-                        text: "FAQ",
-                        ariaLabel: "FAQ",
-                        link: "/FAQ"
-                    },
+                    // {
+                    //     text: "FAQ",
+                    //     ariaLabel: "FAQ",
+                    //     link: "/FAQ"
+                    // },
                     {
                         text: "Guides",
                         ariaLabel: "Guides",

@@ -2,6 +2,7 @@
 lang: en-US
 next: ./getting-featured
 prev: false
+sidebar: false
 ---
 
 # Guidelines

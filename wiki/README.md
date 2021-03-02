@@ -30,10 +30,10 @@ footer: Unofficial GTFO Modding Group
 * [Datablocks](/docs/datablocks/rundown)
 :::
 
-::: feature Community
+::: feature Other Resources
 * [Guidelines](/community/guidelines)
 * [Getting Featured](/community/getting-featured)
-<!--* [FAQ]()-->
+* [FAQ](/faq)
 :::
 
 </div>
