@@ -4,7 +4,7 @@ lang: en-US
 heroText: MTFO Wiki
 tagline: An Unofficial GTFO Modding Group
 actionText: Beginners Guide →
-actionLink: /guides/beginners/setting-up-bepinex#installing-bepinex
+actionLink: /beginners-guide
 navbar: true
 footer: Unofficial GTFO Modding Group
 
@@ -19,21 +19,19 @@ footer: Unofficial GTFO Modding Group
 <div class='features'>
 
 ::: feature Getting Started
-* [Setting up BepInEx](/guides/beginners/setting-up-bepinex.html#installing-bepinex)
-* [Installing Plugins](/guides/beginners/setting-up-bepinex.html#installing-plugins)
-* [Installing Rundowns](/guides/beginners/installing-rundowns)
+* [Setting up Modding](/beginners-guide#setting-up-modding)
+* [Installing Rundowns](/beginners-guide#installing-rundowns)
 :::
 
 ::: feature Developers
-* [Creating Rundowns](/guides/developers/creating-rundowns)
-<!--* [Creating Plugins](/guides/developers/creating-plugins)"-->
-* [Datablocks](/docs/datablocks/rundown)
+* [Creating Rundowns](/creating-rundowns)
+* [Modding / Creating Plugins](/creating-plugins)
 :::
 
 ::: feature Other Resources
-* [Guidelines](/community/guidelines)
-* [Getting Featured](/community/getting-featured)
-* [FAQ](/faq)
+* [Guidelines](/community#guidelines)
+* [Getting Featured](/community#getting-featured)
+* [Frequently Asked Questions](/faq)
 :::
 
 </div>

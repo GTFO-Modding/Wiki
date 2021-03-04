@@ -55,7 +55,7 @@ module.exports = {
     theme: "yuu",
     themeConfig: {
         yuu: {
-            defaultColorTheme: 'blue',
+            defaultColorTheme: "red",
             disableThemeIgnore: true,
             labels: {
                 darkTheme: "Dark theme",
@@ -85,131 +85,116 @@ module.exports = {
                         link: "/"
                     },
                     // {
-                    //     text: "FAQ",
-                    //     ariaLabel: "FAQ",
-                    //     link: "/FAQ"
+                    //     text: "Beginners Guide",
+                    //     ariaLabel: "Getting Setup",
+                    //     link: "/guides/beginners/setting-up-bepinex"
                     // },
                     {
                         text: "Guides",
                         ariaLabel: "Guides",
                         items: [
                             {
-                                text: "Setting up BepInEx",
-                                link: "/guides/beginners/setting-up-bepinex.html#installing-bepinex"
-                            },
-                            {
-                                text: "Installing Rundowns",
-                                link: "/guides/beginners/installing-rundowns"
+                                text: "Beginners Guide",
+                                link: "/beginners-guide/"
                             },
                             {
                                 text: "Creating Rundowns",
-                                link: "/guides/developers/creating-rundowns"
-                            }
-                        ]
-                    },
-                    {
-                        text: "Docs",
-                        ariaLabel: "Docs",
-                        items: [
+                                link: "/creating-rundowns/"
+                            },
                             {
-                                text: "Datablocks",
-                                link: "/docs/datablocks/rundown"
+                                text: "Creating Plugins",
+                                link: "/creating-plugins/"
                             }
                         ]
                     },
-                    // {
-                    //     text: "Community",
-                    //     ariaLabel: "Community",
-                    //     link: "/community/guidelines"
-                    // },
                     {
                         text: "Discord",
                         ariaLabel: "Discord",
                         link: "https://discord.com/invite/rRMPtv4FAh"
                     }
                 ],
-                sidebar: {
-                    "/community/": [
-                        {
-                            title: "Community",
-                            collapsable: false,
-                            // sidebarDepth: 1,
-                            children: [
-                                "guidelines",
-                                "getting-featured"
-                            ]
-                        }
-                    ],
-                    "/guides/": [
-                        {
-                            title: "Guides",
-                            collapsable: false,
-                            // sidebarDepth: 1,
-                            children: [
-                                {
-                                    title: "Getting Started",
-                                    collapsable: true,
-                                    children: [
-                                        "beginners/setting-up-bepinex",
-                                        "beginners/installing-rundowns",
-                                    ]
-                                },
-                                {
-                                    title: "Developers",
-                                    collapsable: true,
-                                    children: [
-                                        "developers/creating-rundowns",
-                                        "developers/creating-plugins"
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "/docs/": [
-                        {
-                            title: "Documentation",
-                            collapsable: false,
-                            // sidebarDepth: 1,
-                            children: [
-                                {
-                                    title: "Datablocks",
-                                    collapsable: true,
-                                    initialOpenGroupIndex: -1,
-                                    sidebarDepth: -1,
-                                    children: [
-                                        {
-                                            title: "Datas",
-                                            collapsable: true,
-                                            sidebarDepth: -1,
-                                            initialOpenGroupIndex: -1,
-                                            children: [
-                                                "datablocks/datas/model-data",
-                                                "datablocks/datas/linked-slave-model-data",
-                                                "datablocks/datas/min-max-value",
-                                                "datablocks/datas/health-data",
-                                                "datablocks/datas/expedition-in-tier",
-                                                "datablocks/datas/layer-data",
-                                                "datablocks/datas/local-zone-index"
-                                            ]
-                                        },
-                                        "datablocks/rundown",
-                                        "datablocks/level-layout",
-                                        "datablocks/player-offline-gear",
-                                        "datablocks/enemy",
-                                        "datablocks/enemy-detection",
-                                        "datablocks/enemy-balancing",
-                                        "datablocks/enemy-movement",
-                                        "datablocks/enemy-behavior",
-                                        "datablocks/enemy-population",
-                                    ]
-                                }
-                            ]
-                        },
-                    ],
-                    "/": [
-                        ""
-                    ]
-                }
+                // sidebar: {
+                //     "/community/": [
+                //         {
+                //             title: "Community",
+                //             collapsable: false,
+                //             // sidebarDepth: 1,
+                //             children: [
+                //                 "guidelines",
+                //                 "getting-featured"
+                //             ]
+                //         }
+                //     ],
+                //     "/guides/": [
+                //         {
+                //             title: "Guides",
+                //             collapsable: false,
+                //             // sidebarDepth: 1,
+                //             children: [
+                //                 {
+                //                     title: "Getting Started",
+                //                     collapsable: true,
+                //                     children: [
+                //                         "beginners/setting-up-bepinex",
+                //                         "beginners/installing-rundowns",
+                //                     ]
+                //                 },
+                //                 {
+                //                     title: "Developers",
+                //                     collapsable: true,
+                //                     children: [
+                //                         "developers/creating-rundowns",
+                //                         "developers/creating-plugins"
+                //                     ]
+                //                 }
+                //             ]
+                //         }
+                //     ],
+                //     "/docs/": [
+                //         {
+                //             title: "Documentation",
+                //             collapsable: false,
+                //             // sidebarDepth: 1,
+                //             children: [
+                //                 {
+                //                     title: "Datablocks",
+                //                     collapsable: true,
+                //                     initialOpenGroupIndex: -1,
+                //                     sidebarDepth: -1,
+                //                     children: [
+                //                         {
+                //                             title: "Datas",
+                //                             collapsable: true,
+                //                             sidebarDepth: -1,
+                //                             initialOpenGroupIndex: -1,
+                //                             children: [
+                //                                 "datablocks/datas/model-data",
+                //                                 "datablocks/datas/linked-slave-model-data",
+                //                                 "datablocks/datas/min-max-value",
+                //                                 "datablocks/datas/health-data",
+                //                                 "datablocks/datas/expedition-in-tier",
+                //                                 "datablocks/datas/layer-data",
+                //                                 "datablocks/datas/local-zone-index"
+                //                             ]
+                //                         },
+                //                         "datablocks/rundown",
+                //                         "datablocks/level-layout",
+                //                         "datablocks/player-offline-gear",
+                //                         "datablocks/enemy",
+                //                         "datablocks/enemy-detection",
+                //                         "datablocks/enemy-balancing",
+                //                         "datablocks/enemy-movement",
+                //                         "datablocks/enemy-behavior",
+                //                         "datablocks/enemy-population",
+                //                     ]
+                //                 }
+                //             ]
+                //         },
+                //     ],
+                //     "/": [
+                //         ""
+                //     ]
+                // }
             },
             "/fr/": {
                 selectText: "Langue",

@@ -1,7 +1,7 @@
 ---
 lang: en-US
-prev: false
-next: false
+sidebar: auto
+sidebarDepth: 1
 ---
 
 # Creating Rundowns
@@ -84,9 +84,8 @@ Wether the block will be loaded or not.
 "internalEnabled": true,
 "persistentID": 1
 ```
-
-<!-- | Name | About |
+<!-- plus description? --->
+| Guide | Author |
 | - | - |
-| [Level Layout](level-layout) | Zones array for the Level Layout datablock |
-| Player Offline Gear | Neat |
-Cool chart? -->
+| | |
+Cool chart?
