@@ -263,7 +263,7 @@ module.exports = {
 
         }]
         ["sitemap", {
-            hostname: "https://mtfo.wiki"
+            hostname: "https://wiki.mtfo.dev"
         }]
     ],
     configureWebpack: {
