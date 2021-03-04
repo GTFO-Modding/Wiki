@@ -3,7 +3,7 @@ const path = require("path")
 module.exports = {
     head: [
         ["link", { rel: "icon", href: "/logo.png" }],
-        ["meta", { property: "og:url", content: "https://wiki.mtfo.dev/" }]
+        ["meta", { property: "og:url", content: "https://wiki.mtfo.dev/" }],
         ["meta", { property: "og:title", content: "MTFO Wiki" }],
         ["meta", { property: "og:description", content: "The Unofficial GTFO Modding Group Wiki" }],
         ["meta", { property: "og:image", content: "/logo.png" }],
