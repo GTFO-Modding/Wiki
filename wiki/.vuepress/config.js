@@ -1,4 +1,5 @@
-const path = require('path')
+const path = require("path")
+const ogPrefix = "og: http://ogp.me/ns#";
 
 /**
  * Creates a Sidebar
@@ -22,12 +23,12 @@ module.exports = {
         }],
         ['meta', [
             // { name: "theme-color", content: "#2196f3" },
-            { name: 'theme-color', content: "#121212" },
-            { name: "og:title", content: "MTFO Wiki" },
-            { name: "og:description", content: "The Offical GTFO Modding Community Wiki" },
-            { name: "og:image", content: "@images/logo.png" },
-            { name: "og:image:width", content: "254" },
-            { name: "og:image:height", content: "254" },
+            // { name: 'theme-color', content: "#121212" },
+            { prefix: ogPrefix, name: "og:title", content: "MTFO Wiki" },
+            { prefix: ogPrefix, name: "og:description", content: "The Offical GTFO Modding Community Wiki" },
+            { prefix: ogPrefix, name: "og:image", content: "@images/logo.png" },
+            { prefix: ogPrefix, name: "og:image:width", content: "254" },
+            { prefix: ogPrefix, name: "og:image:height", content: "254" },
             // { name: "og:type", content: "website" }
         ]]
     ],
