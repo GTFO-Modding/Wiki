@@ -1,36 +1,14 @@
 const path = require("path")
-const ogPrefix = "og: http://ogp.me/ns#";
-
-/**
- * Creates a Sidebar
- * @param {string} title Name of the Sidebar
- * @param {bool} collapsable  Is the Sidebar collapsable?
- * @param  {...string} children Sidebars children
- */
-function createSideBar(title, collapsable, ...children) {
-    return [{
-        title,
-        collapsable,
-        children
-    }]
-}
 
 module.exports = {
     head: [
-        ["link", {
-            rel: "icon",
-            href: "@images/logo.png"
-        }],
-        ['meta', [
-            // { name: "theme-color", content: "#2196f3" },
-            // { name: 'theme-color', content: "#121212" },
-            { prefix: ogPrefix, name: "og:title", content: "MTFO Wiki" },
-            { prefix: ogPrefix, name: "og:description", content: "The Offical GTFO Modding Community Wiki" },
-            { prefix: ogPrefix, name: "og:image", content: "@images/logo.png" },
-            { prefix: ogPrefix, name: "og:image:width", content: "254" },
-            { prefix: ogPrefix, name: "og:image:height", content: "254" },
-            // { name: "og:type", content: "website" }
-        ]]
+        ["link", { rel: "icon", href: "/logo.png" }],
+        ["meta", { name: "og:title", content: "MTFO Wiki" }],
+        ["meta", { name: "og:description", content: "The Unofficial GTFO Modding Group Wiki" }],
+        ["meta", { name: "og:image", content: "/logo.png" }],
+        ["meta", { name: "og:image:width", content: "254" }],
+        ["meta", { name: "og:image:height", content: "254" }],
+        ["meta", { name: 'theme-color', content: "#121212" }],
     ],
     locales: {
         "/": {
@@ -258,12 +236,13 @@ module.exports = {
                 componentName
             }) => `layout-${componentName}`,
         }],
-        // Still need to configure this! https://github.com/lorisleiva/vuepress-plugin-seo
-        ["seo", {
-
-        }]
+        ["@vuepress/pwa", {
+            serviceWorker: true,
+            updatePopup: true
+        }],
         ["sitemap", {
-            hostname: "https://wiki.mtfo.dev"
+            hostname: "https://wiki.mtfo.dev",
+            outFile: "sitemap.xml"
         }]
     ],
     configureWebpack: {
