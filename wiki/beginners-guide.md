@@ -38,7 +38,7 @@ Luckily adding plugins is easy thanks to [BepInEx](https://github.com/BepInEx/Be
 
 ## Installing Rundowns
 
-### Setting up DataDumper
+### Setting up MTFO
 
 1) Download the latest version of [MTFO](https://github.com/GTFO-Modding/MTFO/releases/)
 
@@ -49,7 +49,7 @@ Luckily adding plugins is easy thanks to [BepInEx](https://github.com/BepInEx/Be
 
 ![BepInEx confg folder](@images/datadumperconfig.png)
 
-#### Configuring DataDumper
+#### Configuring MTFO
 
 1) Download the rundown you want to play from the **Featured Content** category from our [Discord](https://discord.com/invite/rRMPtv4FAh)
 
