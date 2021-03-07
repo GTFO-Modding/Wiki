@@ -88,6 +88,11 @@ module.exports = {
                             }
                         ]
                     },
+                    // {
+                    //     text: "Thunderstore",
+                    //     ariaLabel: "Thunderstore",
+                    //     link: "https://gtfo.thunderstore.io/"
+                    // },
                     {
                         text: "Discord",
                         ariaLabel: "Discord",

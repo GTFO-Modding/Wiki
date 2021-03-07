@@ -2,11 +2,15 @@
 lang: en-US
 sidebar: auto
 sidebarDepth: 1
+description: Get Started in the Right Direction!
 next: false
 prev: false
 ---
 
 # Beginners Guide
+This guide goes over setting up [BepInEx](https://github.com/BepInEx/BepInEx) and how to play custom Rundowns. If you would like to create your own Rundown, head over to our [Creating Rundowns](/creating-rundowns/) guide.
+
+---
 
 ## Setting up Modding
 
@@ -49,9 +53,9 @@ Luckily adding plugins is easy thanks to [BepInEx](https://github.com/BepInEx/Be
 
 ![BepInEx confg folder](@images/datadumperconfig.png)
 
-#### Configuring MTFO
+### Configuring MTFO
 
-1) Download the rundown you want to play from the **Featured Content** category from our [Discord](https://discord.com/invite/rRMPtv4FAh)
+1) Download the rundown you want to play from our [Thunderstore Page](https://gtfo.thunderstore.io/) or from the  **Featured Content** category on our [Discord](https://discord.com/invite/rRMPtv4FAh)
 
 1) Unzip/drag the folder containing the datablocks into `GTFO\BepInEx\config\Rundowns`
 ::: warning NOTE

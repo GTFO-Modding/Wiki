@@ -1,6 +1,7 @@
 ---
 home: true
 lang: en-US
+description: The Unofficial GTFO Modding Group Wiki
 heroText: MTFO Wiki
 tagline: An Unofficial GTFO Modding Group
 actionText: Beginners Guide →

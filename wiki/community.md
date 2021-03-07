@@ -1,7 +1,7 @@
 ---
 lang: en-US
 sidebar: auto
-sidebarDepth: 1
+description: Check out the requirements for getting featured and the rules for our community!
 next: false
 prev: false
 ---
