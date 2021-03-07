@@ -1,7 +1,7 @@
 ---
 lang: en-US
-prev: false
-next: false
+sidebar: auto
+sidebarDepth: 1
 ---
 
 # Creating Rundowns
@@ -20,7 +20,7 @@ Sample Text
 ### Header
 Sample Text
 
-<block>
+<div class="block">
 
 ### AboveBlockID
 
@@ -45,7 +45,7 @@ The name of the header shown in the unity inspector.
 
 Wether the section of datablocks are shown in the unity inspector.
 
-</block>
+</div>
 
 ```json
 "AboveBlockID": 1,
@@ -56,7 +56,7 @@ Wether the section of datablocks are shown in the unity inspector.
 ### Block
 Sample Text
 
-<block>
+<div class="block">
 
 ### persistentID
 
@@ -77,16 +77,15 @@ Whenever you add new a new chunk into the games data blocks, you'll need to assi
 
 Wether the block will be loaded or not.
 
-</block>
+</div>
 
 ```json
 "name": "GEAR_Rifle_Semi",
 "internalEnabled": true,
 "persistentID": 1
 ```
-
-<!-- | Name | About |
+<!-- plus description? --->
+| Guide | Author |
 | - | - |
-| [Level Layout](level-layout) | Zones array for the Level Layout datablock |
-| Player Offline Gear | Neat |
-Cool chart? -->
+| | |
+Cool chart?

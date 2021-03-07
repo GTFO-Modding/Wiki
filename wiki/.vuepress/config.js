@@ -1,36 +1,17 @@
-const path = require('path')
-
-/**
- * Creates a Sidebar
- * @param {string} title Name of the Sidebar
- * @param {bool} collapsable  Is the Sidebar collapsable?
- * @param  {...string} children Sidebars children
- */
-function createSideBar(title, collapsable, ...children) {
-    return [{
-        title,
-        collapsable,
-        children
-    }]
-}
+const path = require("path")
 
 module.exports = {
+    title: "MTFO Wiki",
+    description: "An Unofficial GTFO Modding Group",
+    domain: "wiki.mtfo.dev",
+    themeColor: "#121212",
+    imageWidth: 256,
+    imageHeight: 256,
+
     head: [
-        ["link", {
-            rel: "icon",
-            href: "@images/logo.png"
-        }],
-        ['meta', [
-            // { name: "theme-color", content: "#2196f3" },
-            { name: 'theme-color', content: "#121212" },
-            { name: "og:title", content: "MTFO Wiki" },
-            { name: "og:description", content: "The Offical GTFO Modding Community Wiki" },
-            { name: "og:image", content: "@images/logo.png" },
-            { name: "og:image:width", content: "254" },
-            { name: "og:image:height", content: "254" },
-            // { name: "og:type", content: "website" }
-        ]]
+        ["link", { rel: "icon", href: "/favicon.png" }]
     ],
+
     locales: {
         "/": {
             lang: "en-US",
@@ -45,32 +26,32 @@ module.exports = {
         //     title: "MTFO Wiki"
         // }
     },
+
     markdown: {
-        extendMarkdown: md => md.use(require('markdown-it-task-lists')),
-        lineNumbers: false,
-        // toc: { 
-        //     includeLevel: [1, 2, 3]
-        // }
+        extendMarkdown: md => {
+            md.use(require("markdown-it-task-lists"));
+        }
     },
+
     theme: "yuu",
     themeConfig: {
         yuu: {
-            defaultColorTheme: 'blue',
-            disableThemeIgnore: true,
-            labels: {
-                darkTheme: "Dark theme",
-                ignoreThemes: "Ignore themes"
-            }
+            defaultColorTheme: "blue",
+            // disableThemeIgnore: true,
+            // labels: {
+            //     darkTheme: "Dark theme",
+            //     ignoreThemes: "Ignore themes"
+            // }
         },
 
         repo: "GTFO-Modding/Wiki",
-        docsDir: "docs",
+        docsDir: "wiki",
         editLinks: true,
 
         // logo: "./logo.png",
-        smoothScroll: true,
-        displayAllHeaders: false,
-        activeHeaderLinks: false,
+        // smoothScroll: true,
+        displayAllHeaders: true,
+        // activeHeaderLinks: false,
 
         locales: {
             "/": {
@@ -84,38 +65,33 @@ module.exports = {
                         ariaLabel: "Home",
                         link: "/"
                     },
+                    // {
+                    //     text: "Beginners Guide",
+                    //     ariaLabel: "Getting Setup",
+                    //     link: "/guides/beginners/setting-up-bepinex"
+                    // },
                     {
                         text: "Guides",
                         ariaLabel: "Guides",
                         items: [
                             {
-                                text: "Setting up BepInEx",
-                                link: "/guides/beginners/setting-up-bepinex.html#installing-bepinex"
-                            },
-                            {
-                                text: "Installing Rundowns",
-                                link: "/guides/beginners/installing-rundowns"
+                                text: "Beginners Guide",
+                                link: "/beginners-guide/"
                             },
                             {
                                 text: "Creating Rundowns",
-                                link: "/guides/developers/creating-rundowns"
-                            }
-                        ]
-                    },
-                    {
-                        text: "Docs",
-                        ariaLabel: "Docs",
-                        items: [
+                                link: "/creating-rundowns/"
+                            },
                             {
-                                text: "Datablocks",
-                                link: "/docs/datablocks/rundown"
+                                text: "Creating Plugins",
+                                link: "/creating-plugins/"
                             }
                         ]
                     },
                     // {
-                    //     text: "Community",
-                    //     ariaLabel: "Community",
-                    //     link: "/community/guidelines"
+                    //     text: "Thunderstore",
+                    //     ariaLabel: "Thunderstore",
+                    //     link: "https://gtfo.thunderstore.io/"
                     // },
                     {
                         text: "Discord",
@@ -123,88 +99,6 @@ module.exports = {
                         link: "https://discord.com/invite/rRMPtv4FAh"
                     }
                 ],
-                sidebar: {
-                    "/community/": [
-                        {
-                            title: "Community",
-                            collapsable: false,
-                            // sidebarDepth: 1,
-                            children: [
-                                "guidelines",
-                                "getting-featured"
-                            ]
-                        }
-                    ],
-                    "/guides/": [
-                        {
-                            title: "Guides",
-                            collapsable: false,
-                            // sidebarDepth: 1,
-                            children: [
-                                {
-                                    title: "Getting Started",
-                                    collapsable: true,
-                                    children: [
-                                        "beginners/setting-up-bepinex",
-                                        "beginners/installing-rundowns",
-                                    ]
-                                },
-                                {
-                                    title: "Developers",
-                                    collapsable: true,
-                                    children: [
-                                        "developers/creating-rundowns",
-                                        "developers/creating-plugins"
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "/docs/": [
-                        {
-                            title: "Documentation",
-                            collapsable: false,
-                            // sidebarDepth: 1,
-                            children: [
-                                {
-                                    title: "Datablocks",
-                                    collapsable: true,
-                                    initialOpenGroupIndex: -1,
-                                    sidebarDepth: -1,
-                                    children: [
-                                        {
-                                            title: "Datas",
-                                            collapsable: true,
-                                            sidebarDepth: -1,
-                                            initialOpenGroupIndex: -1,
-                                            children: [
-                                                "datablocks/datas/model-data",
-                                                "datablocks/datas/linked-slave-model-data",
-                                                "datablocks/datas/min-max-value",
-                                                "datablocks/datas/health-data",
-                                                "datablocks/datas/expedition-in-tier",
-                                                "datablocks/datas/layer-data",
-                                                "datablocks/datas/local-zone-index"
-                                            ]
-                                        },
-                                        "datablocks/rundown",
-                                        "datablocks/level-layout",
-                                        "datablocks/player-offline-gear",
-                                        "datablocks/enemy",
-                                        "datablocks/enemy-detection",
-                                        "datablocks/enemy-balancing",
-                                        "datablocks/enemy-movement",
-                                        "datablocks/enemy-behavior",
-                                        "datablocks/enemy-population",
-                                    ]
-                                }
-                            ]
-                        },
-                    ],
-                    "/": [
-                        ""
-                    ]
-                }
             },
             "/fr/": {
                 selectText: "Langue",
@@ -234,21 +128,22 @@ module.exports = {
             }
         }
     },
+
     plugins: [
-        "vuepress-plugin-smooth-scroll",
-        "@vuepress/nprogress",
-        ['@vuepress/search', {
-            searchMaxSuggestions: 10
-        }],
+        // "vuepress-plugin-smooth-scroll",
         ["@vuepress/last-updated", {
             transformer: timestamp => require('dateformat')(timestamp, 'yyyy/mm/dd hh:MM:ss TT')
         }],
+        // ['@vuepress/search', {
+        //     searchMaxSuggestions: 10
+        // }],
         ['@vuepress/medium-zoom', {
             options: {
                 margin: 8,
                 background: '#21253073',
             },
         }],
+        "@vuepress/nprogress",
         ["container", {
             type: "feature",
             before: info => `<div class="feature"><h2>${info}</h2>`,
@@ -260,19 +155,39 @@ module.exports = {
             after: "</div>",
         }],
         ["named-chunks", {
-            pageChunkName: ({
-                key
-            }) => `page${key.slice(1)}`,
-            layoutChunkName: ({
-                componentName
-            }) => `layout-${componentName}`,
+            pageChunkName: ({ key }) => `page${key.slice(1)}`,
+            layoutChunkName: ({ componentName }) => `layout-${componentName}`,
         }],
-        // Still need to configure this! https://github.com/lorisleiva/vuepress-plugin-seo
-        ["seo", {
-
-        }]
+        ["@vuepress/pwa", {
+            serviceWorker: true,
+            updatePopup: false
+        }],
         ["sitemap", {
-            hostname: "https://mtfo.wiki"
+            hostname: "https://wiki.mtfo.dev",
+            outFile: "sitemap.xml"
+        }],
+        ["seo", {
+            // siteTitle: (_, $site) => $site.title,
+            // title: $page => $page.title,
+            // description: $page => $page.frontmatter.description,
+            // author: (_, $site) => $site.themeConfig.author,
+            // tags: $page => $page.frontmatter.tags,
+            // twitterCard: _ => false,
+            // twitterTitle: _ => false,
+            // twitterUrl: _ => false,
+            // type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
+            // url: (_, $site, path) => ($site.themeConfig.domain || "") + path,
+            image: ($page, $site) => $page.frontmatter.image ? (($site.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image) : "/favicon.png",
+            // publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
+            // modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
+            customMeta: (add, context) => {
+                const { $site, $page } = context;
+
+                add("theme-color", $page.frontmatter.themeColor || ($site.themeColor || "#121212"), "property");
+
+                add("og:image:width", $page.frontmatter.imageWidth || $site.imageWidth || 256, "property");
+                add("og:image:height", $page.frontmatter.imageHeight || $site.imageHeight || 256, "property");
+            }
         }]
     ],
     configureWebpack: {

@@ -21,5 +21,5 @@ COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /usr/app/wiki/.vuepress/dist /usr/share/nginx/html
 
 # Expose port and run
-EXPOSE 80
+EXPOSE 443
 CMD ["nginx", "-g", "daemon off;"]
