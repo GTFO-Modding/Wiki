@@ -21,8 +21,8 @@ This guide goes over setting up [BepInEx](https://github.com/BepInEx/BepInEx) an
 Usually, you would find it here. Though, if you have changed the steam install drive, use that drive letter instead.\
 `C:\Program Files (x86)\Steam\steamapps\common\GTFO\`
 
-1. Download the latest IL2CPP x64 [Artifact](https://builds.bepis.io/projects/bepinex_be) of BepInEx.
-2. Extract the contents of BepInEx into the [GTFO Folder](#where-is-the-gtfo-folder).
+1. Download the latest [Thunderstore release](https://gtfo.thunderstore.io/package/BepInEx/BepInExPack_GTFO/) of BepInEx.
+2. Follow the installation steps and extract the contents of BepInEx into the [GTFO Folder](#where-is-the-gtfo-folder).
 3. Run GTFO, and once you reach the inject screen, close GTFO.
 > This allows BepInEx to generate all of its nessary files.
 
@@ -44,7 +44,7 @@ Luckily adding plugins is easy thanks to [BepInEx](https://github.com/BepInEx/Be
 
 ### Setting up MTFO
 
-1) Download the latest version of [MTFO](https://github.com/GTFO-Modding/MTFO/releases/)
+1) Download the latest version of [MTFO](https://gtfo.thunderstore.io/package/dakkhuza/MTFO/)
 
 1) Unzip/drag the entire folder into `GTFO\BepInEx\plugins`
 
