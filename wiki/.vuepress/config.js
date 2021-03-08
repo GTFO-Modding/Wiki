@@ -37,11 +37,11 @@ module.exports = {
     themeConfig: {
         yuu: {
             defaultColorTheme: "blue",
-            // disableThemeIgnore: true,
-            // labels: {
-            //     darkTheme: "Dark theme",
-            //     ignoreThemes: "Ignore themes"
-            // }
+            disableThemeIgnore: true,
+            labels: {
+                darkTheme: "Dark theme",
+                ignoreThemes: "Ignore themes"
+            }
         },
 
         repo: "GTFO-Modding/Wiki",
@@ -49,9 +49,9 @@ module.exports = {
         editLinks: true,
 
         // logo: "./logo.png",
-        // smoothScroll: true,
+        smoothScroll: true,
         displayAllHeaders: true,
-        // activeHeaderLinks: false,
+        activeHeaderLinks: true,
 
         locales: {
             "/": {

@@ -1,6 +1,7 @@
 ---
 home: true
 lang: en-US
+title: MTFO Wiki
 description: The Unofficial GTFO Modding Group Wiki
 heroText: MTFO Wiki
 tagline: An Unofficial GTFO Modding Group
@@ -8,13 +9,6 @@ actionText: Beginners Guide →
 actionLink: /beginners-guide
 navbar: true
 footer: Unofficial GTFO Modding Group
-
-# tags:
-#   - gtfo
-#   - gtfo modding
-#   - modding
-#   - wiki
-#   - help
 ---
 
 <div class='features'>
@@ -26,6 +20,7 @@ footer: Unofficial GTFO Modding Group
 
 ::: feature Developers
 * [Creating Rundowns](/creating-rundowns)
+* [Datablocks](/datablocks)
 * [Modding / Creating Plugins](/creating-plugins)
 :::
 
