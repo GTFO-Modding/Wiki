@@ -104,3 +104,13 @@ div.block
 
 .dropdown-wrapper button.dropdown-title
   outline: none
+
+// Fixes theme flashing
+div#app:not([data-loaded])
+  *
+    visibility: hidden !important
+    transition: none !important
+    -webkit-transition: none !important
+    -moz-transition: none !important
+    -ms-transition: none !important
+    -o-transition: none !important

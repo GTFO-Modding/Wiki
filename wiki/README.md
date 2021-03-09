@@ -19,9 +19,9 @@ footer: Unofficial GTFO Modding Group
 :::
 
 ::: feature Developers
-* [Creating Rundowns](/creating-rundowns)
-* [Datablocks](/datablocks)
-* [Modding / Creating Plugins](/creating-plugins)
+* [Creating Rundowns](/creating-rundowns/)
+* [Datablock Documentation](https://github.com/GTFO-Modding/Man)
+* [Modding / Creating Plugins](/creating-plugins/)
 :::
 
 ::: feature Other Resources

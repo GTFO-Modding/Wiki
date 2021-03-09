@@ -191,6 +191,7 @@ module.exports = {
         }]
     ],
     configureWebpack: {
+        mode: "production",
         resolve: {
             alias: {
                 '@images': path.resolve(__dirname, '../.assets/images'),

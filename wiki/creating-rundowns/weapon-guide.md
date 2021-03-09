@@ -1,2 +1,0 @@
-# Weapon Guide
-

@@ -86,6 +86,7 @@ Wether the block will be loaded or not.
 ```
 <!-- plus description? --->
 | Guide | Author |
-| - | - |
-| | |
-Cool chart?
+| --------------------------------------------- | ------------- |
+| [Weapon](./weapon-guide)                      | Mapper Man #1 |
+| [Warden Objective](./warden-objective-guide)  | Mapper Man #2 |
+| [Enemy](./enemy-guide)                        | Mapper Man #3 |
