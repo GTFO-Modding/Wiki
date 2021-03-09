@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /*.html$
+Disallow: /datablocks/
+Disallow: /assets/
+
+Sitemap: https://wiki.mtfo.dev/sitemap.xml
